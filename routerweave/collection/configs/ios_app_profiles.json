@@ -1,0 +1,217 @@
+{
+  "version": 2,
+  "apps": {
+    "qqmusic": {
+      "display_name": "QQ Music",
+      "bundle_id": "com.tencent.QQMusic",
+      "process_name": "QQMusic",
+      "category": "music"
+    },
+    "netease": {
+      "display_name": "NetEase Cloud Music",
+      "bundle_id": "com.netease.cloudmusic",
+      "process_name": "neteasemusic",
+      "category": "music",
+      "native_play_control": "btn_floating_play"
+    },
+    "spotify": {
+      "display_name": "Spotify",
+      "bundle_id": "com.spotify.client",
+      "process_name": "Spotify",
+      "category": "music"
+    },
+    "csdn": {
+      "display_name": "CSDN",
+      "bundle_id": "net.csdn.CsdnPlus",
+      "process_name": "CsdnPlus",
+      "category": "browsing"
+    },
+    "douyin": {
+      "display_name": "Douyin",
+      "bundle_id": "com.ss.iphone.ugc.Aweme",
+      "process_name": "Aweme",
+      "category": "short_video",
+      "native_photo_marker": "ic-photos-tag"
+    },
+    "aweme": {
+      "alias_for": "douyin",
+      "note": "Accepted iOS app-name alias."
+    },
+    "kuaishou": {
+      "display_name": "Kuaishou",
+      "bundle_id": "com.jiangjia.gif",
+      "process_name": "com_kwai_gif",
+      "category": "short_video",
+      "native_feed_surface": "kFeaturedSlideTableViewAccessId",
+      "notification_prompt": {
+        "title": "打开推送通知",
+        "dismiss": "忽略"
+      },
+      "interest_prompt": {
+        "title": "选择感兴趣的类型",
+        "swipe_hint": "上滑继续观看视频"
+      }
+    },
+    "tiktok": {
+      "display_name": "TikTok",
+      "bundle_id": "com.zhiliaoapp.musically",
+      "process_name": "TikTok",
+      "category": "short_video",
+      "native_feed_surface": "top_tabs_recomend",
+      "native_feed_selected_value": "1"
+    },
+    "bilibili": {
+      "display_name": "Bilibili",
+      "bundle_id": "tv.danmaku.bilianime",
+      "process_name": "bili-universal",
+      "category": "long_video",
+      "native_feed_home_prefix": "已选中, 首页"
+    },
+    "youtube": {
+      "display_name": "YouTube",
+      "bundle_id": "com.google.ios.youtube",
+      "process_name": "YouTube",
+      "category": "long_video"
+    },
+    "iqiyi": {
+      "display_name": "iQIYI",
+      "bundle_id": "com.qiyi.iphone",
+      "process_name": "iQiYiPhoneVideo",
+      "category": "long_video"
+    },
+    "douyu": {
+      "display_name": "Douyu",
+      "bundle_id": "tv.douyu.live",
+      "process_name": "DYZB",
+      "category": "live_stream"
+    },
+    "huya": {
+      "display_name": "Huya",
+      "bundle_id": "com.yy.kiwi",
+      "process_name": "kiwi",
+      "category": "live_stream"
+    },
+    "twitch": {
+      "display_name": "Twitch",
+      "bundle_id": "tv.twitch",
+      "process_name": "Twitch",
+      "category": "live_stream"
+    },
+    "baidu": {
+      "display_name": "Baidu",
+      "bundle_id": "com.baidu.BaiduMobile",
+      "process_name": "BaiduBoxApp",
+      "category": "browsing",
+      "ios_browsing_plan": {
+        "detail_entry_enabled": true,
+        "detail_scroll_enabled": false,
+        "feed_refresh_enabled": true,
+        "bidirectional_feed_enabled": true,
+        "home_button_query": "type == 'XCUIElementTypeButton' AND name == '百度' AND visible == 1",
+        "selected_feed_tab_query": "type == 'XCUIElementTypeButton' AND name == '推荐' AND value == '1' AND visible == 1",
+        "refresh_feed_query": "type == 'XCUIElementTypeButton' AND name == '推荐' AND visible == 1",
+        "detail_back_query": "type == 'XCUIElementTypeButton' AND name == '返回' AND visible == 1",
+        "detail_surface_query": "type == 'XCUIElementTypeButton' AND name == '返回' AND visible == 1",
+        "detail_surface_selector_pattern": "^返回$",
+        "feed_identity_query_using": "xpath",
+        "feed_identity_query": "(//XCUIElementTypeStaticText[@visible='true' and string-length(@name) >= 8 and not(contains(@name, 'SearchBox')) and not(contains(@label, '搜索')) and not(contains(@label, '天气')) and not(contains(@label, '小说')) and not(contains(@label, '直播')) and not(contains(@label, '视频')) and not(contains(@label, '合集')) and not(contains(@label, '完结')) and not(contains(@label, '搞笑')) and not(contains(@label, '看过')) and not(contains(@label, '小时前')) and not(contains(@label, '分钟前')) and not(contains(@label, '关注')) and not(contains(@label, '热搜')) and not(contains(@label, '推荐')) and not(contains(@label, '发现')) and not(contains(@label, '消息')) and not(contains(@label, '我的')) and not(contains(@label, '拍照'))])[position() <= 5]",
+        "content_query_using": "xpath",
+        "content_query": "(//XCUIElementTypeStaticText[@visible='true' and string-length(@name) >= 8 and not(parent::XCUIElementTypeCell[.//XCUIElementTypeStaticText[contains(@label, ':')]]) and parent::XCUIElementTypeCell[(.//XCUIElementTypeButton[@name='不感兴趣' and @visible='true'] or (count(XCUIElementTypeStaticText)=2 and count(XCUIElementTypeStaticText[@visible='true'])=2 and not(.//XCUIElementTypeImage[@visible='true']) and not(.//XCUIElementTypeButton))) and not(.//XCUIElementTypeImage[@name='bba_feed_template_video_play']) and not(.//XCUIElementTypeStaticText[contains(@name,'广告') or contains(@label,'广告') or @name='付费'])] and not(contains(@name, 'SearchBox')) and not(contains(@label, '搜索')) and not(contains(@label, '天气')) and not(contains(@label, '小说')) and not(contains(@label, '直播')) and not(contains(@label, '视频')) and not(contains(@label, 'MV')) and not(contains(@label, '合集')) and not(contains(@label, '完结')) and not(contains(@label, '看过')) and not(contains(@label, '小时前')) and not(contains(@label, '分钟前')) and not(contains(@label, '关注')) and not(contains(@label, '热搜')) and not(contains(@label, '推荐')) and not(contains(@label, '发现')) and not(contains(@label, '消息')) and not(contains(@label, '我的')) and not(contains(@label, '拍照'))])[1]"
+      }
+    },
+    "xiaohongshu": {
+      "display_name": "Xiaohongshu",
+      "bundle_id": "com.xingin.discover",
+      "process_name": "discover",
+      "category": "browsing",
+      "ios_browsing_plan": {
+        "detail_entry_enabled": true,
+        "detail_scroll_enabled": false,
+        "feed_refresh_enabled": true,
+        "refresh_open_recovery": false,
+        "bidirectional_feed_enabled": true,
+        "home_button_query": "name == '首页'",
+        "ensure_feed_mode": "launch",
+        "recover_feed_mode": "relative_tap",
+        "recover_feed_tap_parameters": {
+          "x_ratio": 0.055,
+          "y_ratio": 0.065
+        },
+        "feed_root_query_using": "xpath",
+        "feed_root_query": "(//XCUIElementTypeCollectionView[@visible='true' and .//XCUIElementTypeCell[@visible='true']])[1]",
+        "feed_root_role": "collectionview",
+        "home_selector_pattern": ".*",
+        "selected_feed_tab_query_using": "xpath",
+        "selected_feed_tab_query": "(//XCUIElementTypeCell[@visible='true']//XCUIElementTypeStaticText[@visible='true' and string-length(@name) >= 4])[1]",
+        "selected_feed_tab_role": "statictext",
+        "selected_feed_tab_selector_pattern": ".*",
+        "feed_progress_evidence": "visual_or_layout",
+        "refresh_mode": "pull_down",
+        "detail_return_mode": "candidate",
+        "detail_back_candidate_parameters": {
+          "include_pattern": "返回",
+          "role_pattern": "button",
+          "require_clickable": true,
+          "selection_policy": "first_visible",
+          "candidate_wait_seconds": 10,
+          "candidate_poll_seconds": 1,
+          "candidate_snapshot_max_depth": 50
+        },
+        "detail_back_candidate_fallback_parameters": {
+          "include_pattern": "^$",
+          "role_pattern": "button",
+          "require_clickable": true,
+          "max_width_ratio": 0.15,
+          "max_height_ratio": 0.12,
+          "min_top_ratio": 0.02,
+          "max_bottom_ratio": 0.13,
+          "selection_policy": "nearest_point",
+          "x_ratio": 0.08,
+          "y_ratio": 0.07,
+          "candidate_wait_seconds": 5,
+          "candidate_poll_seconds": 1,
+          "candidate_snapshot_max_depth": 50
+        },
+        "detail_surface_query": "name == '评论输入框' OR name == '留下你的想法吧' OR name == '说点什么...'",
+        "detail_surface_observation_mode": "structured",
+        "detail_positive_evidence_sufficient": true,
+        "detail_surface_role": "button",
+        "detail_surface_selector_pattern": "评论输入框|留下你的想法吧|说点什么\\.\\.\\.",
+        "live_surface_query": "name == '更多直播' OR name == '下次开播提醒我'",
+        "live_surface_role": "statictext",
+        "live_surface_selector_pattern": "更多直播|下次开播提醒我",
+        "feed_identity_query_using": "xpath",
+        "feed_identity_query": "(//XCUIElementTypeCell[@visible='true']//XCUIElementTypeStaticText[@visible='true' and string-length(@name) >= 4])[position() <= 5]",
+        "content_activation_mode": "candidate",
+        "content_candidate_parameters": {
+          "include_pattern": ".+",
+          "exclude_pattern": "直播|广告",
+          "role_pattern": "cell",
+          "require_clickable": true,
+          "min_width_ratio": 0.25,
+          "max_width_ratio": 0.75,
+          "min_height_ratio": 0.15,
+          "max_height_ratio": 0.8,
+          "min_top_ratio": 0.08,
+          "max_bottom_ratio": 0.92,
+          "selection_policy": "nearest_point",
+          "x_ratio": 0.5,
+          "y_ratio": 0.45,
+          "candidate_wait_seconds": 15,
+          "candidate_poll_seconds": 1,
+          "candidate_max_scrolls": 3,
+          "candidate_scroll_not_before_seconds": 2,
+          "candidate_snapshot_max_depth": 50,
+          "candidate_history_key": "xiaohongshu-feed-card",
+          "candidate_avoid_recent": 3
+        }
+      }
+    },
+    "weibo": {
+      "display_name": "Weibo",
+      "bundle_id": "com.sina.weibo",
+      "process_name": "Weibo",
+      "category": "browsing"
+    }
+  }
+}

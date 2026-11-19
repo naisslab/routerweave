@@ -1,0 +1,673 @@
+{
+  "comparison": {
+    "RouterWeave-App": {
+      "inputs": "Router device traffic on the registered Android, iOS and Windows windows",
+      "scoring_unit": "30-second device window",
+      "split": "156 fit captures and 39 historical test captures; 2424 six-class test windows",
+      "split_record": {
+        "root": "primary",
+        "file": "baseline-matrix-3x4-20261030/prepared/screen-time/meta.json",
+        "sha256": "3b9cd1ee369f63e5ce7bbf3c419f8884bee97ded8833e8b8d72b3c5c4c38172b"
+      },
+      "summary": "python -B score.py comparison",
+      "fits": [
+        {
+          "method": "RouterWeave",
+          "model_id": "final156-traffic-header-film-groupcv-20261026",
+          "pipeline_id": "native30-traffic-header-reliable-film-platform-pcgrad-v1",
+          "timeline_id": null,
+          "record": {
+            "root": "primary",
+            "file": "baseline-matrix-3x4-20261030/results/screen-pipeline-screen-time.json",
+            "sha256": "628292562c55a51fb156da94854a8564a0d4491898189a74cab9be13923a5b91"
+          },
+          "frozen_artifacts": [
+            {
+              "root": "primary",
+              "file": "screen-time-traffic-header-groupcv-retrain-20261026/final/model/model.pt",
+              "sha256": "fc971e48998ec1c839b868342f158bb9983548582a824639188715109467aaed"
+            },
+            {
+              "root": "primary",
+              "file": "screen-time-traffic-header-groupcv-retrain-20261026/test_probabilities.npy",
+              "sha256": "c94fee11bdf763de9096de1a21f5df5e60baa872d61ac22587e8d7e4252269cb"
+            }
+          ],
+          "original_entry": {
+            "root": "primary",
+            "file": "screen-time-traffic-header-groupcv-retrain-20261026/finish.py",
+            "sha256": "8b18abbf4c850e3c53d04997d954ffd52e3c3d6cfa48b50a32a6e1032cab8e4e"
+          },
+          "original_command": "python -B finish.py"
+        },
+        {
+          "method": "BehavIoT",
+          "model_id": "behaviot-rf-ovr-screen-time-20261030",
+          "pipeline_id": "behaviot-imc23-flow-burst-rf-no-hostname-v1",
+          "timeline_id": null,
+          "record": {
+            "root": "primary",
+            "file": "baseline-matrix-3x4-20261030/results/behaviot-screen-time.json",
+            "sha256": "9f7797fa9b22fd165b99d1adcdb3668ccc59e046c00e9b119bb464462f0b104b"
+          },
+          "frozen_artifacts": [
+            {
+              "root": "primary",
+              "file": "baseline-matrix-3x4-20261030/results/behaviot-screen-time-predictions.npy",
+              "sha256": "5b4288f441a951faadbee0b5ea0ad56ed7c460fd32f4b1068d69a92bba31bfa1"
+            }
+          ],
+          "original_entry": {
+            "root": "source",
+            "file": "scripts/modeling/baseline_matrix.py",
+            "sha256": "81435fb824274e697977406bea6bf735ee9165254bbcd810d020763f5862838e"
+          },
+          "original_command": "python -B scripts/modeling/baseline_matrix.py behaviot --datasets screen-time"
+        },
+        {
+          "method": "FlowPrint",
+          "model_id": "flowprint-screen-time-20261031",
+          "pipeline_id": "native-flowprint-frozen-sample-split-v1",
+          "timeline_id": null,
+          "record": {
+            "root": "external",
+            "file": "flowprint-four-datasets-20261031/screen-time/result.json",
+            "sha256": "efc0daf20d78eb422e528cf20dba77772794478596b8b8b50cdedcc386ceb529"
+          },
+          "frozen_artifacts": [
+            {
+              "root": "external",
+              "file": "flowprint-four-datasets-20261031/screen-time/model.joblib",
+              "sha256": "90ddf8580a5b1cef5a327d0b4fcd76b817515f13889e9a890f50f68d51b9bc06"
+            },
+            {
+              "root": "external",
+              "file": "flowprint-four-datasets-20261031/screen-time/predictions.npz",
+              "sha256": "296f23e7a2c8de358520c921f24782fa6df6a7317dbae3f3de788acac6542f53"
+            }
+          ],
+          "original_entry": {
+            "root": "external",
+            "file": "flowprint-four-datasets-20261031/run.py",
+            "sha256": "5f883879fcadf05795eb9ae0dd95929201d85d0c10e3e4362eb86205fe962aa4"
+          },
+          "original_command": "python -B run.py screen-time"
+        }
+      ]
+    },
+    "RouterWeave-IoT": {
+      "inputs": "Detector-generated candidates matched to a reference operation; source-level fingerprints for FlowPrint",
+      "scoring_unit": "matched candidate",
+      "split": "1022 matched candidates; 19 test-supported labels; 39 of 74 test capture batches also contribute distinct training segments",
+      "split_record": {
+        "root": "primary",
+        "file": "baseline-matrix-3x4-20261030/prepared/iot/meta.json",
+        "sha256": "9444846db759ef07d105145fb3367844b5abdbc93ab982d5b4b548fc4bd8201e"
+      },
+      "summary": "python -B score.py comparison",
+      "fits": [
+        {
+          "method": "BehavIoT",
+          "model_id": "behaviot-rf-ovr-iot-20261030",
+          "pipeline_id": "behaviot-imc23-flow-burst-rf-no-hostname-v1",
+          "timeline_id": null,
+          "record": {
+            "root": "primary",
+            "file": "baseline-matrix-3x4-20261030/results/behaviot-iot.json",
+            "sha256": "34802fa5f49036b760d9833c8db1cb7123fbab0f876dc9e23ad7681eeb4ce3f6"
+          },
+          "frozen_artifacts": [
+            {
+              "root": "primary",
+              "file": "baseline-matrix-3x4-20261030/results/behaviot-iot-predictions.npy",
+              "sha256": "dc0f2f73eecb7f8df3cd6e7e4ef763e805dc128ff57a593e3522151e8d9f0c89"
+            }
+          ],
+          "original_entry": {
+            "root": "source",
+            "file": "scripts/modeling/baseline_matrix.py",
+            "sha256": "81435fb824274e697977406bea6bf735ee9165254bbcd810d020763f5862838e"
+          },
+          "original_command": "python -B scripts/modeling/baseline_matrix.py behaviot --datasets iot"
+        },
+        {
+          "method": "RouterWeave",
+          "model_id": "iot-stage2-numeric-contaminated-20261028",
+          "pipeline_id": "iot-b-candidates-numeric-size-film-contaminated-v1",
+          "timeline_id": null,
+          "record": {
+            "root": "primary",
+            "file": "baseline-matrix-3x4-20261030/results/iot-pipeline-iot.json",
+            "sha256": "00a6b12d6cc522276a5c4687272b88992a26248b14f29a7c6d3692c6167b0cd6"
+          },
+          "frozen_artifacts": [
+            {
+              "root": "primary",
+              "file": "iot-stage2-contaminated-training-20261028/numeric/seed42/classifier.pt",
+              "sha256": "545d41d9765b74a0842aa8bb1a6a754f44547496e9c50fe160fe70f761610d28"
+            },
+            {
+              "root": "primary",
+              "file": "iot-stage2-contaminated-training-20261028/numeric/seed42/probabilities.npz",
+              "sha256": "c5359d065b0b3ae411c9d83b285c470f36af8d59e7f7b339b56b430351bf60db"
+            },
+            {
+              "root": "primary",
+              "file": "iot-stage2-contaminated-training-20261028/numeric/seed43/classifier.pt",
+              "sha256": "3480098727fe7a56ab701c061d47b360bb27f05d629eaeaee4d6e7f8918b4c7f"
+            },
+            {
+              "root": "primary",
+              "file": "iot-stage2-contaminated-training-20261028/numeric/seed43/probabilities.npz",
+              "sha256": "40d8ceafbbcfc8bc0881a8624e586af75bd64dd5a6a23f8670de765bf6cf6a42"
+            },
+            {
+              "root": "primary",
+              "file": "iot-stage2-contaminated-training-20261028/numeric/seed44/classifier.pt",
+              "sha256": "296cb8f47ef7d1a2e9b5c680d1732c6b1a2ed6a7fbd1b6303aa511b57c28dc57"
+            },
+            {
+              "root": "primary",
+              "file": "iot-stage2-contaminated-training-20261028/numeric/seed44/probabilities.npz",
+              "sha256": "141c56b2a22df5b86714ba7e1024d1cf7b21019953e7f93f5bd3e492464be354"
+            }
+          ],
+          "original_entry": {
+            "root": "primary",
+            "file": "iot-stage2-contaminated-training-20261028/train.py",
+            "sha256": "4b3edb8669c2666317a90ad136398ad024002ca6611e125bfb652354bb969377"
+          },
+          "original_command": "python -B train.py 42 43 44"
+        },
+        {
+          "method": "FlowPrint",
+          "model_id": "flowprint-iot-source-batches-20261031",
+          "pipeline_id": "native-flowprint-source-capture-batches-v1",
+          "timeline_id": null,
+          "record": {
+            "root": "external",
+            "file": "flowprint-iot-source-batches-20261031/result.json",
+            "sha256": "00162d8b45b5c2e26475b55e272695875302a207f85b66cbc78cee9cd040cdfb"
+          },
+          "frozen_artifacts": [
+            {
+              "root": "external",
+              "file": "flowprint-iot-source-batches-20261031/predictions.joblib",
+              "sha256": "cb344df02a353c5bbfa895e112602b98a5ebdf5469e0f16563ad62e9d59159fc"
+            }
+          ],
+          "original_entry": {
+            "root": "external",
+            "file": "flowprint-iot-source-batches-20261031/run.py",
+            "sha256": "86410f438fce9debab09fb679ac5c3dca49fb7aba07e9e751d79ca58ea606072"
+          },
+          "original_command": "python -B run.py"
+        }
+      ]
+    },
+    "BehavIoT-Dataset": {
+      "inputs": "Provided activity clips relabeled by device category and operation family",
+      "scoring_unit": "supplied clip",
+      "split": "4223 train / 1408 validation / 1409 test; capture components held together; 18 labels",
+      "split_record": {
+        "root": "external",
+        "file": "behaviot-category-action-20261031/prepared/behaviot/meta.json",
+        "sha256": "bade004a5734664796c721446826a76bb87174fcdef0bb0d42adeffdf5eabd74"
+      },
+      "summary": "python -B score.py comparison",
+      "fits": [
+        {
+          "method": "RouterWeave",
+          "model_id": "numeric-size-film-behaviot-category-operation-20261031",
+          "pipeline_id": "behaviot-clip-category-operation-v1",
+          "timeline_id": null,
+          "record": {
+            "root": "external",
+            "file": "behaviot-category-action-20261031/results/numeric-film-behaviot.json",
+            "sha256": "3e42c3639676992ae98cba5a3653eac962ce7cd8b5d4ac0c3d992c0fc08e59eb"
+          },
+          "frozen_artifacts": [
+            {
+              "root": "external",
+              "file": "behaviot-category-action-20261031/results/numeric-film-behaviot/seed42.pt",
+              "sha256": "1eb4bfa1ad48d08c345f404f7142243b29fda260b058da00cef2949b38e1e03d"
+            },
+            {
+              "root": "external",
+              "file": "behaviot-category-action-20261031/results/numeric-film-behaviot/seed42-predictions.npy",
+              "sha256": "2acb23b747a024cfee93eb6f4dbcda21c294f7e01aa49659bd033badd270c701"
+            }
+          ],
+          "original_entry": {
+            "root": "external",
+            "file": "behaviot-category-action-20261031/run.py",
+            "sha256": "7c9c3a5bb27358e20eb2a52a29684bb0be77353ef93571cff3ce4431efd8ca1c"
+          },
+          "original_command": "python -B run.py film"
+        },
+        {
+          "method": "BehavIoT",
+          "model_id": "behaviot-rf-ovr-behaviot-20261030",
+          "pipeline_id": "behaviot-imc23-flow-burst-rf-no-hostname-v1",
+          "timeline_id": null,
+          "record": {
+            "root": "external",
+            "file": "behaviot-category-action-20261031/results/behaviot-behaviot.json",
+            "sha256": "fe92a6261b1c1406bbea45e7ea22622f82fdf582baab5a0b6182fcc1a5219015"
+          },
+          "frozen_artifacts": [
+            {
+              "root": "external",
+              "file": "behaviot-category-action-20261031/results/behaviot-behaviot-predictions.npy",
+              "sha256": "bd16cd6408516e7b4ccbd23d1611fd842e6e3e966b1e6258648f7bcde9b88591"
+            }
+          ],
+          "original_entry": {
+            "root": "external",
+            "file": "behaviot-category-action-20261031/run.py",
+            "sha256": "7c9c3a5bb27358e20eb2a52a29684bb0be77353ef93571cff3ce4431efd8ca1c"
+          },
+          "original_command": "python -B run.py rf"
+        },
+        {
+          "method": "FlowPrint",
+          "model_id": "flowprint-behaviot-20261031",
+          "pipeline_id": "native-flowprint-frozen-sample-split-v1",
+          "timeline_id": null,
+          "record": {
+            "root": "external",
+            "file": "behaviot-category-action-20261031/flowprint/behaviot/result.json",
+            "sha256": "deab52cea9add73a016a22f8aa2f0009bec66e4999f94adaf582001bfc545ed6"
+          },
+          "frozen_artifacts": [
+            {
+              "root": "external",
+              "file": "behaviot-category-action-20261031/flowprint/behaviot/model.joblib",
+              "sha256": "036a3b5a23885fa3439ee696558f7d6b39ad703fe9f8283dc9345a426add17fb"
+            },
+            {
+              "root": "external",
+              "file": "behaviot-category-action-20261031/flowprint/behaviot/predictions.npz",
+              "sha256": "f579c1ece9b2ea4e683ba6c86761ed97f409483b48d6851deeacd2803e46dd0c"
+            }
+          ],
+          "original_entry": {
+            "root": "external",
+            "file": "behaviot-category-action-20261031/run.py",
+            "sha256": "7c9c3a5bb27358e20eb2a52a29684bb0be77353ef93571cff3ce4431efd8ca1c"
+          },
+          "original_command": "python -B run.py flowprint"
+        }
+      ]
+    },
+    "ITC-Net-Blend-60": {
+      "inputs": "Nonempty 30-second windows including the last partial window, eight app-purpose proxies",
+      "scoring_unit": "nonempty capture window",
+      "split": "399 / 129 / 149 whole captures; 5885 / 2031 / 2104 windows; 35 included apps",
+      "split_record": {
+        "root": "external",
+        "file": "itc-behavior8-baselines-20261031/split.json",
+        "sha256": "9b081be34eaed95717d1c6de0d6c95892f854d26be041d9e8cbfb08b96b47be6"
+      },
+      "summary": "python -B score.py comparison",
+      "fits": [
+        {
+          "method": "RouterWeave",
+          "model_id": "itc-behavior8-screen-25epochs-20261031",
+          "pipeline_id": "itc-native30-behavior-proxy8-capture-split-v1",
+          "timeline_id": null,
+          "record": {
+            "root": "external",
+            "file": "itc-behavior8-screen-25epochs-20261031/screen/result.json",
+            "sha256": "c35c2863978fefabd051478343b7cb69e9a8f3d6be34356b0308801e93813759"
+          },
+          "frozen_artifacts": [
+            {
+              "root": "external",
+              "file": "itc-behavior8-screen-25epochs-20261031/screen/best.pt",
+              "sha256": "a6b3accbe145885dfd5df797e7fdf2290045ff9dfc42e505db5149dbd132f60c"
+            },
+            {
+              "root": "external",
+              "file": "itc-behavior8-screen-25epochs-20261031/screen/test-predictions.npz",
+              "sha256": "68ba5581eb4b589c94c245f0956f6b1107c90a56f34d480cd8cab09fc96923e9"
+            }
+          ],
+          "original_entry": {
+            "root": "external",
+            "file": "itc-behavior8-screen-25epochs-20261031/run.py",
+            "sha256": "de0bb53a96377f8135f2b31711913ea84892e822edf206a8741d2f4080918fae"
+          },
+          "original_command": "python -B run.py"
+        },
+        {
+          "method": "BehavIoT",
+          "model_id": "itc-behavior8-behaviot-20261031",
+          "pipeline_id": "itc-native30-behavior-proxy8-capture-split-v1",
+          "timeline_id": null,
+          "record": {
+            "root": "external",
+            "file": "itc-behavior8-baselines-20261031/behaviot/result.json",
+            "sha256": "58a028ac45ea68f419508dd96eeb936f02d631b300316e5820075e5e30caef6c"
+          },
+          "frozen_artifacts": [
+            {
+              "root": "external",
+              "file": "itc-behavior8-baselines-20261031/behaviot/class-00.joblib",
+              "sha256": "cba9b1aa892da650e9802aa82381092db5fc92e8b4df9c8357d27eb8239ae322"
+            },
+            {
+              "root": "external",
+              "file": "itc-behavior8-baselines-20261031/behaviot/class-01.joblib",
+              "sha256": "a3c27e2076a6c95c524f4d5008d71b8aa9b5a5f234b5eae4d6ef4f8656f371b9"
+            },
+            {
+              "root": "external",
+              "file": "itc-behavior8-baselines-20261031/behaviot/class-02.joblib",
+              "sha256": "0cf532ee7a0835d83a944aa5d864dac0f8b6a5731e2ffe2767524898012e2ec3"
+            },
+            {
+              "root": "external",
+              "file": "itc-behavior8-baselines-20261031/behaviot/class-03.joblib",
+              "sha256": "12f73b321e43bd436c7827407ff5d4231d5646b2f4575d60e7320cebb3515359"
+            },
+            {
+              "root": "external",
+              "file": "itc-behavior8-baselines-20261031/behaviot/class-04.joblib",
+              "sha256": "85d9a7e027ebc6c94b447eb86a404d8fc752ffc5d83b5007e082e90a03a76116"
+            },
+            {
+              "root": "external",
+              "file": "itc-behavior8-baselines-20261031/behaviot/class-05.joblib",
+              "sha256": "7048d0ed6545a1da811935d6b9efe90d3420cccaa01cb776ce31721900b1ddf7"
+            },
+            {
+              "root": "external",
+              "file": "itc-behavior8-baselines-20261031/behaviot/class-06.joblib",
+              "sha256": "2392d5e310980d44c96295504a8019b07d0699b9cefa45cc72b93048ea0a03b7"
+            },
+            {
+              "root": "external",
+              "file": "itc-behavior8-baselines-20261031/behaviot/class-07.joblib",
+              "sha256": "3974218176d44f7be08f0d2d943fd8603d9236e55582b6a2c15410636aa7497a"
+            },
+            {
+              "root": "external",
+              "file": "itc-behavior8-baselines-20261031/behaviot/test-predictions.npz",
+              "sha256": "7e67129ab9b916766573933e3b07f35ffb3641e4dd101c92f4e38637d915eda5"
+            }
+          ],
+          "original_entry": {
+            "root": "external",
+            "file": "itc-behavior8-baselines-20261031/run.py",
+            "sha256": "61a20893d82139adc62a5feb8784346afa67586b2bffc3b475436ddb442c60bf"
+          },
+          "original_command": "python -B run.py behaviot"
+        },
+        {
+          "method": "FlowPrint",
+          "model_id": "itc-behavior8-flowprint-20261031",
+          "pipeline_id": "itc-native30-behavior-proxy8-capture-split-v1",
+          "timeline_id": null,
+          "record": {
+            "root": "external",
+            "file": "itc-behavior8-baselines-20261031/flowprint/result.json",
+            "sha256": "6a67b7810e93a18dd9c8d6b7b37f9f9afa07b53f23f6b8eddb2d212eab0bd195"
+          },
+          "frozen_artifacts": [
+            {
+              "root": "external",
+              "file": "itc-behavior8-baselines-20261031/flowprint/model-lossless.joblib",
+              "sha256": "f36d40f917185436b523dd49cb66b541d3edba806087767c35fbe6f6da461459"
+            },
+            {
+              "root": "external",
+              "file": "itc-behavior8-baselines-20261031/flowprint/test-predictions.npz",
+              "sha256": "58c10f4d90db30c84117b534ee39234584815011da458c6dd38f62c85bc67d65"
+            }
+          ],
+          "original_entry": {
+            "root": "external",
+            "file": "itc-behavior8-baselines-20261031/run.py",
+            "sha256": "61a20893d82139adc62a5feb8784346afa67586b2bffc3b475436ddb442c60bf"
+          },
+          "original_command": "python -B run.py flowprint"
+        }
+      ]
+    }
+  },
+  "observation": {
+    "model_id": "iot-stage2-numeric-contaminated-20261028",
+    "pipeline_id": "iot-numeric-film-candidate-matched-family-mix-first-hit2s-replay-v1",
+    "evaluation_id": "section421-network-event-midpoint-time-gate-20261101",
+    "timeline_id": null,
+    "split": "Inspected development partition: 1095 containers, 1033 references, at most one reference per container",
+    "scoring_unit": "one-to-one class-correct network event, all accepted outputs and references",
+    "input": {
+      "root": "primary",
+      "file": "section421-input-construction-numeric-sweep-20261031/candidate-matched-classifiers/time-constrained-events/protocol.json",
+      "sha256": "e946d8bf42588ac7d28563cce57b22ab8170b98f1a893663cf9f65a9ccdb6bd1"
+    },
+    "split_and_fit": {
+      "root": "primary",
+      "file": "section421-input-construction-numeric-sweep-20261031/candidate-matched-classifiers/protocol.json",
+      "sha256": "72f6f2a4681ae38fc7758e110bc0924d5d39455e621c64affa16a22aa37be56f"
+    },
+    "weights": {
+      "fixed": {
+        "root": "primary",
+        "file": "section421-input-construction-numeric-sweep-20261031/candidate-matched-classifiers/fixed-mixed/seed42/classifier.pt",
+        "sha256": "3c47c24faeb249cae5aa3576ebe1889c87d1b13895883dabee9ac3f7c82f44b3"
+      },
+      "gap": {
+        "root": "primary",
+        "file": "section421-input-construction-numeric-sweep-20261031/candidate-matched-classifiers/gap-mixed/seed42/classifier.pt",
+        "sha256": "e6806719f237874d98d9830465ca986d5a8a420aa016a64f98ec33a4b0636790"
+      },
+      "learned-B": {
+        "root": "primary",
+        "file": "iot-stage2-contaminated-training-20261028/numeric/seed42/classifier.pt",
+        "sha256": "545d41d9765b74a0842aa8bb1a6a754f44547496e9c50fe160fe70f761610d28"
+      }
+    },
+    "original_command": "python -B evaluate_timed.py",
+    "original_entry": {
+      "root": "primary",
+      "file": "section421-input-construction-numeric-sweep-20261031/evaluate_timed.py",
+      "sha256": "133bd8e1649774e02f325a473a9ed14459e8d3c44511359c9be720d2e6c08a27"
+    },
+    "summary": "python -B score.py observation",
+    "records": {
+      "root": "primary",
+      "file": "section421-input-construction-numeric-sweep-20261031/candidate-matched-classifiers/time-constrained-events/comparison.csv",
+      "sha256": "c570bcdd6fa5349fde45eccbc74d9e818c2f7ebf41bc8ebad508ef2d7aff6083"
+    }
+  },
+  "fusion": {
+    "pipeline_id": "native30-traffic-header-reliable-film-platform-pcgrad-v1",
+    "evaluation_id": "native30-original-test39-pure-windows-v1",
+    "timeline_id": null,
+    "split": "156 fit captures, 39 test captures; 7 epochs, seed 7; 2424 test windows; subsets reuse the same predictions",
+    "scoring_unit": "correct 30-second windows / all selected windows",
+    "input": {
+      "root": "primary",
+      "file": "section422-latest-input-controls-20261101/protocol.json",
+      "sha256": "9de9f45c013397b080cc707b9ad937864cf927ec435429fceaead81395ee6cf1"
+    },
+    "models": [
+      {
+        "view": "joint",
+        "model_id": "final156-traffic-header-film-groupcv-20261026",
+        "weight": {
+          "root": "primary",
+          "file": "screen-time-traffic-header-groupcv-retrain-20261026/final/model/model.pt",
+          "sha256": "fc971e48998ec1c839b868342f158bb9983548582a824639188715109467aaed"
+        }
+      },
+      {
+        "view": "service_only",
+        "model_id": "latest-traffic-header-service-only-seed7-20261101",
+        "weight": {
+          "root": "primary",
+          "file": "section422-latest-input-controls-20261101/service_only/model.pt",
+          "sha256": "f3819c187de6b1774dc0e9e823bcc40e025276040031d68c75e92f6624829102"
+        }
+      },
+      {
+        "view": "traffic_only",
+        "model_id": "latest-traffic-header-traffic-only-seed7-20261101",
+        "weight": {
+          "root": "primary",
+          "file": "section422-latest-input-controls-20261101/traffic_only/model.pt",
+          "sha256": "a315a5a67f8c4dd9822f8ca1c95aa5e3a70d3071e3fac549ce6e7c4661a24544"
+        }
+      }
+    ],
+    "predictions": {
+      "root": "primary",
+      "file": "section422-complementarity-discovery-20261101/windows.csv",
+      "sha256": "fa0c9a0400fef9448f166142e2bdb4b69408cff517c37df2af9b778e89b816c6"
+    },
+    "cohorts": {
+      "root": "primary",
+      "file": "section422-physical-scenarios-20261101/observables.csv",
+      "sha256": "c2c3d6d81f67e9dc8ee7147f70378f41f15ef26e931f6e1d1ea87034bf07e420"
+    },
+    "original_entry": {
+      "root": "primary",
+      "file": "section422-latest-input-controls-20261101/experiment.py",
+      "sha256": "5c03ab7c67808980e1e40c66fbe76ce698372d746cf90f2ae839c29b0d6e0f9f"
+    },
+    "original_commands": [
+      "python -B experiment.py fit --mode traffic_only",
+      "python -B experiment.py fit --mode service_only",
+      "python -B experiment.py summarize"
+    ],
+    "summary": "python -B score.py fusion"
+  },
+  "latency": {
+    "inputs": {
+      "root": "primary",
+      "file": "section413-efficiency-20261031/recognition-latency-v6/protocol.json",
+      "sha256": "5196691f7c5dc91300c760211be7dd84d93be3c2d0b232c72f3c087e0a37b5a8"
+    },
+    "split": "Fixed post-fit workload; 3 application traces and 50 actions plus 50 background traces; final-window correction uses the 50 action recordings",
+    "scoring_unit": "cutoff or network-reference onset to output; closest-rank P95; process CPU, peak RSS and fitted footprint",
+    "methods": [
+      {
+        "mode": "app-rw",
+        "model_id": "final156-traffic-header-film-groupcv-20261026",
+        "pipeline_id": "native30-stride5-single-stream-latency-v6",
+        "timeline_id": null
+      },
+      {
+        "mode": "app-fp",
+        "model_id": "flowprint-screen-time-20261031",
+        "pipeline_id": "flowprint-online-window30-stride5-native-latency-v6",
+        "timeline_id": null
+      },
+      {
+        "mode": "iot-rw",
+        "model_id": "iot-stage2-numeric-contaminated-20261028",
+        "pipeline_id": "native-numeric-film-quiet2-deadline5-single-stream-latency-v6",
+        "timeline_id": null
+      },
+      {
+        "mode": "iot-rf",
+        "model_id": "behaviot-rf-ovr-iot-20261030",
+        "pipeline_id": "behaviot-native-flow-burst-gap1-single-stream-latency-v6",
+        "timeline_id": null
+      },
+      {
+        "mode": "iot-rf-final-window",
+        "model_id": "behaviot-rf-ovr-iot-20261030",
+        "pipeline_id": "behaviot-numeric-native-gap1-author-window5-causal-latency-v6",
+        "timeline_id": null
+      }
+    ],
+    "weights": {
+      "root": "primary",
+      "file": "section413-efficiency-20261031/recognition-latency-v6/models.json",
+      "sha256": "15df975ea7bc51a21f60b56947102d788580201f907af94f2c3e5265866beee2"
+    },
+    "baselines": {
+      "root": "primary",
+      "file": "section413-efficiency-20261031/recognition-latency-v6/forest-export.json",
+      "sha256": "2b2dd9728fd28e4864a9a45e76b8fa4e76c343774a71e1a00f1688819ff0c823"
+    },
+    "staged_input_and_weight_hashes": {
+      "root": "primary",
+      "file": "section413-efficiency-20261031/recognition-latency-v6/stage.json",
+      "sha256": "b71511a5f22b62603c0425515dab4cc76971d6c051a9c1b0756fe94463983c87"
+    },
+    "original_entries": [
+      {
+        "root": "primary",
+        "file": "section413-efficiency-20261031/recognition-latency-v6/run.py",
+        "sha256": "06bd6ee9d861d5b3bb56053b024987ea8da949eedbc2867395263add9f5cde88"
+      },
+      {
+        "root": "primary",
+        "file": "section413-efficiency-20261031/recognition-latency-v6/rf_window_run.py",
+        "sha256": "f20c0a3bf51b0929ffc843461809ebbb1afb5c42bcfafb3e4b3b38cf3b4a3647"
+      }
+    ],
+    "original_commands": [
+      "python -B run.py measure",
+      "python -B run.py summarize",
+      "python -B rf_window_run.py all"
+    ],
+    "summary": "python -B score.py latency"
+  },
+  "capacity": {
+    "model_ids": [
+      "final156-traffic-header-film-groupcv-20261026",
+      "numeric-film-iot-complete-event-group-holdout-20261031"
+    ],
+    "pipeline_id": "recognition-quiet2-v4",
+    "timeline_id": null,
+    "split": "fixed paced workload, equal Windows and Google Nest Mini logical replicas; one run per load",
+    "input": {
+      "root": "primary",
+      "file": "section413-efficiency-20261031/recognition-quiet2-v4/scaling-stage.json",
+      "sha256": "96efe1dcfbc9c4fe9e3c40c70ba53428a96a325cba58582c9677b36c49efb422"
+    },
+    "weights": {
+      "weights.bin": {
+        "root": "primary",
+        "file": "section413-efficiency-20261031/weights.bin",
+        "sha256": "62774c5073441ac264822f2d8c3215cc5b341f33cc5616f8f9bbc5b5ae0b95f8"
+      },
+      "normalizer.bin": {
+        "root": "primary",
+        "file": "section413-efficiency-20261031/normalizer.bin",
+        "sha256": "2666a18263aa63eaa4d31b9e527b23f98557be692238406dbf1ebb9f83a4dd9a"
+      },
+      "native-models.bin": {
+        "root": "primary",
+        "file": "section413-efficiency-20261031/native-models.bin",
+        "sha256": "53e1de55e8e1e2f1f32118cc7d4db574dec3bea83aa7e5ddeab599956caff151"
+      }
+    },
+    "scoring_unit": "20 consecutive five-second rounds per load after 30-second warmup; CPU over 100 s normalized to two cores; peak RSS in decimal MB",
+    "original_entries": [
+      {
+        "root": "primary",
+        "file": "section413-efficiency-20261031/recognition-quiet2-v4/run.py",
+        "sha256": "2902709371c680a01301a3e1fdbca43d08ce1bf06fa03cba8f9bbccb974fbbc4"
+      },
+      {
+        "root": "primary",
+        "file": "routerweave-capacity-limit-20261106/run.py",
+        "sha256": "249587ebebaa89877b61ea6ded520eb7f72ed00b397093c1f1a634365e220c82"
+      }
+    ],
+    "original_commands": [
+      "python -B run.py measure",
+      "python -B run.py measure --devices 48",
+      "python -B run.py measure --devices 54",
+      "python -B run.py measure --devices 64"
+    ],
+    "summary": "python -B score.py capacity"
+  }
+}

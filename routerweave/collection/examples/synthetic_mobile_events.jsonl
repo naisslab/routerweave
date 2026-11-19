@@ -1,0 +1,4 @@
+{"event_type":"playbook_started","recorded_at":"2000-01-01T00:00:00Z","payload":{}}
+{"event_type":"sustain_started","recorded_at":"2000-01-01T00:00:02Z","payload":{"step_id":"playback"}}
+{"event_type":"sustain_finished","recorded_at":"2000-01-01T00:00:12Z","payload":{"step_id":"playback","result":{"outcome":"success"}}}
+{"event_type":"playbook_finished","recorded_at":"2000-01-01T00:00:13Z","payload":{"result":{"playbook_id":"music-session","outcome":"success"}}}

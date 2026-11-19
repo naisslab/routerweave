@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "devices": [
+    {
+      "id": "phone",
+      "name": "Example phone",
+      "collection_task_id": "android-manual-screen-time",
+      "steps": [
+        {"label": "browsing", "seconds": 20},
+        {"label": "music", "seconds": 20}
+      ]
+    },
+    {
+      "id": "plug",
+      "name": "Example plug",
+      "collection_task_id": "manual-smart-plug",
+      "steps": [
+        {"label": "power_on", "seconds": 45},
+        {"label": "power_off", "seconds": 45}
+      ]
+    }
+  ]
+}

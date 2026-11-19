@@ -1,0 +1,41 @@
+{
+  "experiment": "smart_plug_switch",
+  "control_platform": "google_home",
+  "target_valid_per_action": 1,
+  "controller": {
+    "application_bundle_id": "com.google.Chromecast",
+    "wda_url": "http://127.0.0.1:8100"
+  },
+  "router": {
+    "host": "${ROUTERWEAVE_ROUTER_HOST}",
+    "user": "root",
+    "interface": "br-lan",
+    "identity_file": "${ROUTERWEAVE_SSH_KEY}"
+  },
+  "devices": [
+    {
+      "id": "plug",
+      "mac": "${ROUTERWEAVE_DEVICE_MAC}",
+      "name": "${ROUTERWEAVE_DEVICE_NAME}",
+      "device_type": "smart_plug",
+      "baseline_seconds": 5,
+      "tail_seconds": 30,
+      "poll_seconds": 5,
+      "state_timeout_seconds": 75,
+      "tap_x_fraction": 0.45,
+      "max_consecutive_failures": 4,
+      "actions": [
+        {
+          "name": "power_on",
+          "from": "off",
+          "to": "on"
+        },
+        {
+          "name": "power_off",
+          "from": "on",
+          "to": "off"
+        }
+      ]
+    }
+  ]
+}

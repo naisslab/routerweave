@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "command_templates": {
+    "power_on": "turn on {device_name}",
+    "power_off": "turn off {device_name}",
+    "lock": "lock {device_name}",
+    "unlock": "unlock {device_name}",
+    "change_color": "set {device_name} to {target}",
+    "brightness_up": "set {device_name} brightness to {target_percent} percent",
+    "brightness_down": "set {device_name} brightness to {target_percent} percent"
+  },
+  "spoken_values": {
+    "warm_white": "warm white",
+    "cool_white": "cool white"
+  },
+  "assistants": {
+    "alexa": {
+      "wake_phrase": "Alexa",
+      "utterance_template": "{wake_phrase}, {command}",
+      "voice_name": "Microsoft Zira Desktop",
+      "rate": -1
+    },
+    "google_home": {
+      "wake_phrase": "Hey Google",
+      "utterance_template": "{wake_phrase}, {command}",
+      "voice_name": "Microsoft Zira Desktop",
+      "rate": -1
+    },
+    "siri": {
+      "wake_phrase": "Hey Siri",
+      "utterance_template": "{wake_phrase}, {command}",
+      "voice_name": "Microsoft Zira Desktop",
+      "rate": -1
+    }
+  }
+}

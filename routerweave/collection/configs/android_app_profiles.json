@@ -1,0 +1,394 @@
+{
+  "version": 2,
+  "apps": {
+    "qqmusic": {
+      "display_name": "QQ Music",
+      "package": "com.tencent.qqmusic",
+      "category": "music",
+      "optional_invitation": {
+        "title": "20.9.5内测版邀您体验",
+        "decline_text": "不再提醒"
+      }
+    },
+    "netease": {
+      "display_name": "NetEase Cloud Music",
+      "package": "com.netease.cloudmusic",
+      "category": "music",
+      "ui_hierarchy_backend": "current_accessibility",
+      "notification_prompt": {
+        "title": "开启推送通知",
+        "deny_text": "取消"
+      }
+    },
+    "spotify": {
+      "display_name": "Spotify",
+      "package": "com.spotify.music",
+      "category": "music",
+      "ui_hierarchy_backend": "current_accessibility",
+      "ui_snapshot_timeout_seconds": 16,
+      "ui_include_not_important_views": false,
+      "music_play_resource_ids": [
+        "com.spotify.music:id/nowplaying_elements_playpause_button",
+        "com.spotify.music:id/play_pause_button"
+      ]
+    },
+    "csdn": {
+      "display_name": "CSDN",
+      "package": "net.csdn.csdnplus",
+      "category": "browsing",
+      "browsing_feed_plan": {
+        "feed_focus_contains": "net.csdn.csdnplus.activity.MainActivity",
+        "feed_marker_pattern": "^收藏文章，同步阅读记录，评论精彩$",
+        "nonblocking_login_banner": {
+          "action_resource_id": "net.csdn.csdnplus:id/tv_login",
+          "context_resource_id": "net.csdn.csdnplus:id/tv_login_desc",
+          "context_text": "收藏文章，同步阅读记录，评论精彩"
+        },
+        "detail_focus_contains": "net.csdn.csdnplus.mvvm.ui.activity.BlogDetailActivity",
+        "feed_tab_component": {
+          "resource_id_regex": "^net[.]csdn[.]csdnplus:id/rl_bar$",
+          "class_regex": "android[.]widget[.]RelativeLayout$",
+          "require_clickable": true,
+          "max_height_ratio": 0.08
+        },
+        "scroll_duration_ms": 760,
+        "content_node": {
+          "include_regex": ".{8,}",
+          "exclude_regex": "课程|专栏|￥|会员|广告|推广|视频|直播|登录|搜索|创建应用|拍题",
+          "class_regex": "android[.]widget[.](FrameLayout|LinearLayout)$",
+          "require_clickable": true,
+          "min_width": 500,
+          "min_height": 70,
+          "max_width": 720,
+          "max_height": 800
+        }
+      }
+    },
+    "baidu": {
+      "display_name": "Baidu",
+      "package": "com.baidu.searchbox",
+      "category": "browsing",
+      "browsing_feed_plan": {
+        "feed_focus_contains": "com.baidu.searchbox.MainActivity",
+        "detail_focus_contains": "com.baidu.searchbox.home.feed.FeedDetailActivity",
+        "alternate_article_surface": {
+          "activity_contains": "com.baidu.searchbox.video.linkageflow.VideoFlowLinkageFullActivity",
+          "container_class": "com.baidu.searchbox.feed.news.NewsDetailContainer$t"
+        },
+        "scroll_duration_ms": 620,
+        "content_open_attempts": 6,
+        "recovery_refresh_component": {
+          "include_regex": "^推荐$",
+          "class_regex": "android[.]widget[.]FrameLayout$",
+          "require_clickable": true,
+          "max_height": 130
+        },
+        "content_node": {
+          "include_regex": "(?s)(?=.{8,})(?=.*不感兴趣).*",
+          "exclude_regex": "广告|推广|视频|短视频|直播|短剧|小说|现场实拍|[0-9]{1,2}:[0-5][0-9]|搜索|关注|评论|点赞|转发|消息|我的|首页",
+          "class_regex": "android[.]widget[.](RelativeLayout|FrameLayout)|android[.]view[.]ViewGroup",
+          "require_clickable": true,
+          "min_width": 500,
+          "min_height": 60,
+          "max_width": 720,
+          "max_height": 800
+        }
+      }
+    },
+    "xiaohongshu": {
+      "display_name": "Xiaohongshu",
+      "package": "com.xingin.xhs",
+      "category": "browsing",
+      "browsing_feed_plan": {
+        "feed_focus_contains": "com.xingin.xhs/.index.v2.IndexActivityV2",
+        "detail_focus_contains": "com.xingin.matrix.notedetail.NoteDetailActivity",
+        "detail_end_texts": [
+          "还没有评论哦"
+        ],
+        "scroll_duration_ms": 560,
+        "content_node": {
+          "include_regex": "^笔记",
+          "exclude_regex": "广告|推广|视频|直播|音乐|歌曲|语音|商品|购买|市集",
+          "class_regex": "android[.]widget[.]FrameLayout$",
+          "require_clickable": false,
+          "min_width": 300,
+          "min_height": 250,
+          "max_width": 400,
+          "max_height": 800
+        }
+      }
+    },
+    "weibo": {
+      "display_name": "Weibo",
+      "package": "com.sina.weibo",
+      "category": "browsing",
+      "session_anr_wait_title": "微博没有响应",
+      "ui_hierarchy_backend": "uiautomator",
+      "ui_idle_fallback_backend": "current_accessibility",
+      "ui_snapshot_timeout_seconds": 16,
+      "ui_include_not_important_views": false,
+      "browsing_feed_plan": {
+        "startup_observation_wait_seconds": 90,
+        "observation_wait_seconds": 30,
+        "feed_focus_contains": "com.sina.weibo/.MainTabActivity",
+        "detail_focus_contains": "com.sina.weibo/.feed.detailrefactor.DetailPageActivity",
+        "scroll_duration_ms": 600,
+        "content_node": {
+          "include_regex": ".{8,}",
+          "resource_id_regex": "^com[.]sina[.]weibo:id/contentTextView$",
+          "exclude_regex": "广告|推广",
+          "class_regex": "android[.]view[.]View$",
+          "require_clickable": false,
+          "min_width": 500,
+          "min_height": 50,
+          "max_width": 700,
+          "max_height": 400,
+          "hierarchy_compressed": true,
+          "hierarchy_read_attempts": 3,
+          "hierarchy_settle_seconds": 2.5,
+          "hierarchy_retry_delay_seconds": 1.0,
+          "hierarchy_read_timeout_seconds": 6.0
+        }
+      }
+    },
+    "douyin": {
+      "display_name": "Douyin",
+      "package": "com.ss.android.ugc.aweme",
+      "category": "short_video"
+    },
+    "kuaishou": {
+      "display_name": "Kuaishou Lite",
+      "package": "com.kuaishou.nebula",
+      "category": "short_video",
+      "interest_prompt": {
+        "title": "选择感兴趣的类型",
+        "swipe_hint": "上滑继续观看视频"
+      },
+      "short_video_ad_plan": {
+        "marker_regex": "(?:^广告(?:$|[ ·•:：])|推广|Sponsored|(?:^|[ ·•:：])Ad(?:$|[ ·•:：])|商品|好物|零食|糖果|种草|带货|领券|购买|同款|下单|立即抢购|去看看|交易店|秒发|现货|店铺|商家|客服|橱窗|旗舰店|专卖店|到手价|包邮)"
+      }
+    },
+    "tiktok": {
+      "display_name": "TikTok",
+      "package": "com.zhiliaoapp.musically",
+      "category": "short_video"
+    },
+    "bilibili": {
+      "display_name": "Bilibili",
+      "package": "tv.danmaku.bili",
+      "category": "long_video",
+      "long_video_card_plan": {
+        "card_include_regex": "[0-9]{1,2}:[0-5][0-9]",
+        "card_exclude_regex": "广告|推广|创作推广|立即打开|竖屏|直播|付费|试看|会员",
+        "card_class_regex": "ViewGroup|FrameLayout|RelativeLayout",
+        "card_require_clickable": true,
+        "card_min_width": 250,
+        "card_min_height": 250,
+        "candidate_selection_policy": "seeded_random",
+        "player_activity_contains": "com.bilibili.ship.theseus.detail.UnitedBizDetailsActivity",
+        "player_resource_id": "tv.danmaku.bili:id/video_container",
+        "player_marker_observation": "structured",
+        "playback_evidence": "media_session"
+      },
+      "ad_interruption_plan": {
+        "marker_regex": "^(?:广告|创作推广|立即打开|跳过\\s*\\d*)$",
+        "skip_text_regex": "^跳过\\s*\\d*$",
+        "max_occurrences": 12
+      },
+      "completed_video_reselect_plan": {
+        "enabled": true,
+        "home_resource_id": "tv.danmaku.bili:id/bottom_navigation",
+        "direction": "up",
+        "duration_ms": 600,
+        "monitor_max_consecutive_misses": 3,
+        "monitor_max_recoveries": 4
+      }
+    },
+    "youtube": {
+      "display_name": "YouTube",
+      "package": "app.revanced.android.youtube",
+      "category": "long_video",
+      "ui_hierarchy_backend": "current_accessibility",
+      "long_video_card_plan": {
+        "card_include_regex": "(?:\\d+小时(?:\\d+分钟)?|\\d{2,}分钟)\\d*秒钟.*播放视频",
+        "card_exclude_regex": "广告|推广|赞助|竖屏|短视频|Shorts|直播|付费|试看|会员",
+        "card_require_clickable": true,
+        "card_min_width_ratio": 0.8,
+        "card_min_height_ratio": 0.15,
+        "card_max_bottom_ratio": 0.94,
+        "player_resource_id": "app.revanced.android.youtube:id/video_metadata_layout"
+      },
+      "feed_refresh_plan": {
+        "enabled": true,
+        "home_resource_id": "app.revanced.android.youtube:id/bottom_bar_container",
+        "duration_ms": 700
+      },
+      "ad_interruption_plan": {
+        "marker_regex": "^(?:广告|Ad|Sponsored)(?:$|[ ·•:：])|^(?:此广告|广告将在|Video will play after ad)|^(?:跳过广告|略过广告|Skip ad|Skip ads)$",
+        "skip_exact_texts": [
+          "跳过广告",
+          "略过广告",
+          "Skip ad",
+          "Skip ads"
+        ],
+        "max_occurrences": 12,
+        "monitor_max_consecutive_misses": 30,
+        "monitor_max_recoveries": 4
+      },
+      "benign_prompt_plan": {
+        "marker_resource_id": "app.revanced.android.youtube:id/mealbar_message",
+        "dismiss_resource_id": "app.revanced.android.youtube:id/mealbar_dismiss_button",
+        "max_occurrences": 2
+      },
+      "completed_video_reselect_plan": {
+        "enabled": true,
+        "home_resource_id": "app.revanced.android.youtube:id/bottom_bar_container",
+        "direction": "up",
+        "duration_ms": 600,
+        "monitor_max_consecutive_misses": 30,
+        "monitor_max_recoveries": 4
+      }
+    },
+    "iqiyi": {
+      "display_name": "iQIYI",
+      "package": "com.qiyi.video",
+      "category": "long_video",
+      "ui_hierarchy_backend": "current_accessibility",
+      "ui_snapshot_timeout_seconds": 16,
+      "ui_include_not_important_views": false,
+      "startup_anr_wait_title": "爱奇艺没有响应",
+      "player_control_plan": {
+        "toggle_resource_id": "com.qiyi.video:id/btn_pause",
+        "reveal_resource_id": "com.qiyi.video:id/danmakuLayout",
+        "pause_accessibility_id": "暂停",
+        "play_accessibility_id": "播放"
+      },
+      "benign_prompt_plan": {
+        "marker_exact_text": "关闭广告，放大暂停画面",
+        "dismiss_exact_text": "关闭广告，放大暂停画面",
+        "max_occurrences": 12
+      },
+      "media_cache_paths": [
+        "files/com.qiyi.video/puma/cache/cache_files",
+        "files/com.qiyi.video_plugin1/puma/cache/cache_files"
+      ],
+      "long_video_card_plan": {
+        "startup_observation_wait_seconds": 90,
+        "observation_wait_seconds": 30,
+        "card_include_regex": "[0-9]+集全",
+        "card_exclude_regex": "广告|竖屏|短视频|直播|付费|试看|会员",
+        "card_class_regex": "ViewGroup|FrameLayout|RelativeLayout",
+        "card_require_clickable": true,
+        "card_min_width": 250,
+        "card_min_height": 180,
+        "candidate_selection_policy": "seeded_random",
+        "player_activity_contains": "org.iqiyi.video.activity.PlayerActivity",
+        "player_resource_id": "com.qiyi.video:id/portrait_reflaction",
+        "player_marker_observation": "structured"
+      },
+      "completed_video_reselect_plan": {
+        "enabled": true,
+        "home_resource_id": "com.qiyi.video:id/navi0",
+        "direction": "up",
+        "duration_ms": 600,
+        "monitor_max_consecutive_misses": 10,
+        "monitor_max_recoveries": 4
+      }
+    },
+    "douyu": {
+      "display_name": "Douyu",
+      "package": "air.tv.douyu.android",
+      "ui_hierarchy_backend": "current_accessibility",
+      "motion_player_resource_id": "air.tv.douyu.android:id/irs",
+      "player_control_plan": {
+        "toggle_resource_id": "air.tv.douyu.android:id/itm",
+        "reveal_resource_id": "air.tv.douyu.android:id/irs"
+      },
+      "category": "live_stream",
+      "media_cache_paths": [
+        "files/douyu/cache",
+        "files/vod/rambo_cache"
+      ],
+      "live_stream_card_plan": {
+        "card_resource_id": "air.tv.douyu.android:id/fry",
+        "startup_overlay": {
+          "marker_resource_id": "air.tv.douyu.android:id/m_ad_splash_ad_hot_area_widget",
+          "timeout_seconds": 8.0
+        },
+        "playback_evidence": "motion",
+        "card_exclude_regex": "交友|语音|电台|聊天|陪伴|点唱|唱歌|才艺|团播|广告|推广|带货|购物",
+        "candidate_selection_policy": "seeded_random",
+        "player_activity_contains": "air.tv.douyu.android/com.douyu.module.player",
+        "room_marker_resource_id": "air.tv.douyu.android:id/isc",
+        "room_marker_observation": "activity_view",
+        "home_marker_resource_id": "air.tv.douyu.android:id/gqx",
+        "monitor_reselect_on_inactive": true,
+        "monitor_max_consecutive_misses": 3,
+        "monitor_max_recoveries": 4
+      }
+    },
+    "huya": {
+      "display_name": "Huya",
+      "package": "com.duowan.kiwi",
+      "ui_hierarchy_backend": "current_accessibility",
+      "ui_snapshot_timeout_seconds": 16,
+      "ui_include_not_important_views": false,
+      "category": "live_stream",
+      "media_cache_paths": [
+        "files/hyVideoCache"
+      ],
+      "live_stream_card_plan": {
+        "card_resource_id": "com.duowan.kiwi:id/live_content",
+        "startup_observation_wait_seconds": 90,
+        "observation_wait_seconds": 30,
+        "pause_hold_allows_playing": true,
+        "inline_containers": {
+          "package": "com.duowan.kiwi",
+          "activity_class": "com.duowan.kiwi.liveroom.ChannelPage",
+          "marker_resource_id": "com.duowan.kiwi:id/player_area",
+          "resource_ids": [
+            "com.duowan.kiwi:id/portrait_media_area_miniapp_popup_container_level2",
+            "com.duowan.kiwi:id/miniapp_popup_ui_container",
+            "com.duowan.kiwi:id/miniapp_popup_content_container",
+            "com.duowan.kiwi:id/game_live_portrait_popup_p2_container"
+          ],
+          "text_resource_ids": [
+            "com.duowan.kiwi:id/tv_item_popup"
+          ]
+        },
+        "benign_overlays": [
+          {
+            "marker_role": "textview",
+            "marker_text_pattern": "^新人打卡必得[0-9.]+元$",
+            "close_text": "Close",
+            "close_role": "image"
+          }
+        ],
+        "card_exclude_regex": "交友|语音|电台|聊天|陪伴|点唱|唱歌|才艺|团播|广告|推广",
+        "player_activity_contains": "com.duowan.kiwi.liveroom"
+      }
+    },
+    "twitch": {
+      "display_name": "Twitch",
+      "package": "tv.twitch.android.app",
+      "category": "live_stream",
+      "live_stream_card_plan": {
+        "card_resource_id": "tv.twitch.android.app:id/status_container",
+        "card_require_clickable": false,
+        "candidate_selection_policy": "seeded_random",
+        "preferred_orientation": "portrait",
+        "card_exclude_regex": "登录|注册|订阅|广告|推广|设置|搜索",
+        "player_activity_contains": "tv.twitch.android.feature.viewer.landing.ViewerLandingActivity",
+        "playback_evidence": "audio_or_motion",
+        "monitor_reselect_on_inactive": true,
+        "monitor_reselect_strategy": "advance_feed",
+        "monitor_max_consecutive_misses": 3,
+        "monitor_max_recoveries": 10,
+        "monitor_advance_attempts": 2,
+        "monitor_restart_on_inactive": true,
+        "feed_filter_resource_id": "tv.twitch.android.app:id/tag_label",
+        "feed_filter_exact_text": "Counter-Strike"
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+[
+  {
+    "role": "train",
+    "device_id": "simulated-light",
+    "device_type": "smart_light",
+    "packets": [[0.0, 32, 1, 0, 0], [1.0, 90, 1, 1, 0], [1.05, 32, 1, 0, 0], [1.1, 105, -1, 1, 0]],
+    "fingerprints": [{"action": "power_on", "members": [[1.0, 90, 1, 1, 0], [1.1, 105, -1, 1, 0]]}],
+    "negative_indices": [0, 2],
+    "supervision_policy": "complete_nonfingerprint_background",
+    "supervision_scope_indices": [0, 1, 2, 3],
+    "unknown_intervals": []
+  },
+  {
+    "role": "train",
+    "device_id": "simulated-light",
+    "device_type": "smart_light",
+    "packets": [[0.0, 35, -1, 0, 0], [2.0, 124, 1, 1, 0], [2.07, 145, -1, 1, 0]],
+    "fingerprints": [{"action": "brightness_up", "members": [[2.0, 124, 1, 1, 0], [2.07, 145, -1, 1, 0]]}],
+    "negative_indices": [0],
+    "supervision_policy": "complete_nonfingerprint_background",
+    "supervision_scope_indices": [0, 1, 2],
+    "unknown_intervals": []
+  }
+]

@@ -1,0 +1,10 @@
+/runs/
+/.go-ios/
+__pycache__/
+*.py[cod]
+*.pcap
+*.pcapng
+*.pem
+.venv/
+.env
+/configs/.collection-registry.lock

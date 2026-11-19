@@ -1,0 +1,24 @@
+{
+  "schema_version": "windows-behavior-plan-v1",
+  "platform": "windows",
+  "behavior_label": "other",
+  "defaults": {
+    "duration_seconds": 60
+  },
+  "categories": [
+    {
+      "id": "local_activity",
+      "targets": [
+        {
+          "name": "Notepad",
+          "command": "notepad.exe"
+        }
+      ],
+      "actions": [
+        {
+          "type": "idle_read"
+        }
+      ]
+    }
+  ]
+}

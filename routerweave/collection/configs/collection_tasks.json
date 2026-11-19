@@ -1,0 +1,1120 @@
+{
+  "schema_version": "collection-task-registry-v1",
+  "tasks": [
+    {
+      "domain_label": "Screen Time",
+      "kind": "mobile",
+      "category_label": "Browsing",
+      "collection_type": "mobile_control",
+      "metadata": {
+        "collection_scope": "single_app",
+        "minimum_window_seconds": 1800
+      },
+      "id": "android-browsing-single-app",
+      "title": "Browsing · Single App",
+      "domain": "screen_time",
+      "platform": "android",
+      "category": "browsing",
+      "status": "ready",
+      "target": {
+        "unit": "samples",
+        "count": 9
+      }
+    },
+    {
+      "domain_label": "Screen Time",
+      "kind": "mobile",
+      "category_label": "Live Stream",
+      "collection_type": "mobile_control",
+      "metadata": {
+        "collection_scope": "single_app",
+        "minimum_window_seconds": 1800
+      },
+      "id": "android-live-stream-single-app",
+      "title": "Live Stream · Single App",
+      "domain": "screen_time",
+      "platform": "android",
+      "category": "live_stream",
+      "status": "ready",
+      "target": {
+        "unit": "samples",
+        "count": 6
+      }
+    },
+    {
+      "domain_label": "Screen Time",
+      "kind": "mobile",
+      "category_label": "Long Video",
+      "collection_type": "mobile_control",
+      "metadata": {
+        "collection_scope": "single_app",
+        "minimum_window_seconds": 1800
+      },
+      "id": "android-long-video-single-app",
+      "title": "Long Video · Single App",
+      "domain": "screen_time",
+      "platform": "android",
+      "category": "long_video",
+      "status": "ready",
+      "target": {
+        "unit": "samples",
+        "count": 6
+      }
+    },
+    {
+      "domain_label": "Screen Time",
+      "kind": "mobile",
+      "category_label": "Music",
+      "collection_type": "mobile_control",
+      "metadata": {
+        "collection_scope": "single_app",
+        "minimum_window_seconds": 1800
+      },
+      "id": "android-music-single-app",
+      "title": "Music · Single App",
+      "domain": "screen_time",
+      "platform": "android",
+      "category": "music",
+      "status": "ready",
+      "target": {
+        "unit": "samples",
+        "count": 6
+      }
+    },
+    {
+      "domain_label": "Screen Time",
+      "kind": "mobile",
+      "category_label": "Short Video",
+      "collection_type": "mobile_control",
+      "metadata": {
+        "collection_scope": "single_app",
+        "minimum_window_seconds": 1800
+      },
+      "id": "android-short-video-single-app",
+      "title": "Short Video · Single App",
+      "domain": "screen_time",
+      "platform": "android",
+      "category": "short_video",
+      "status": "ready",
+      "target": {
+        "unit": "samples",
+        "count": 6
+      }
+    },
+    {
+      "domain_label": "Screen Time",
+      "kind": "mobile",
+      "category_label": "Browsing",
+      "collection_type": "mobile_control",
+      "metadata": {
+        "collection_scope": "single_app",
+        "minimum_window_seconds": 1800
+      },
+      "id": "ios-browsing-single-app",
+      "title": "Browsing · Single App",
+      "domain": "screen_time",
+      "platform": "ios",
+      "category": "browsing",
+      "status": "ready",
+      "target": {
+        "unit": "samples",
+        "count": 8
+      }
+    },
+    {
+      "domain_label": "Screen Time",
+      "kind": "mobile",
+      "category_label": "Live Stream",
+      "collection_type": "mobile_control",
+      "metadata": {
+        "collection_scope": "single_app",
+        "minimum_window_seconds": 1800
+      },
+      "id": "ios-live-stream-single-app",
+      "title": "Live Stream · Single App",
+      "domain": "screen_time",
+      "platform": "ios",
+      "category": "live_stream",
+      "status": "ready",
+      "target": {
+        "unit": "samples",
+        "count": 6
+      }
+    },
+    {
+      "domain_label": "Screen Time",
+      "kind": "mobile",
+      "category_label": "Long Video",
+      "collection_type": "mobile_control",
+      "metadata": {
+        "collection_scope": "single_app",
+        "minimum_window_seconds": 1800
+      },
+      "id": "ios-long-video-single-app",
+      "title": "Long Video · Single App",
+      "domain": "screen_time",
+      "platform": "ios",
+      "category": "long_video",
+      "status": "ready",
+      "target": {
+        "unit": "samples",
+        "count": 6
+      }
+    },
+    {
+      "domain_label": "Screen Time",
+      "kind": "mobile",
+      "category_label": "Music",
+      "collection_type": "mobile_control",
+      "metadata": {
+        "collection_scope": "single_app",
+        "minimum_window_seconds": 1800
+      },
+      "id": "ios-music-single-app",
+      "title": "Music · Single App",
+      "domain": "screen_time",
+      "platform": "ios",
+      "category": "music",
+      "status": "ready",
+      "target": {
+        "unit": "samples",
+        "count": 6
+      }
+    },
+    {
+      "domain_label": "Screen Time",
+      "kind": "mobile",
+      "category_label": "Short Video",
+      "collection_type": "mobile_control",
+      "metadata": {
+        "collection_scope": "single_app",
+        "minimum_window_seconds": 1800
+      },
+      "id": "ios-short-video-single-app",
+      "title": "Short Video · Single App",
+      "domain": "screen_time",
+      "platform": "ios",
+      "category": "short_video",
+      "status": "ready",
+      "target": {
+        "unit": "samples",
+        "count": 6
+      }
+    },
+    {
+      "domain_label": "Screen Time",
+      "kind": "windows",
+      "category_label": "Browsing",
+      "collection_type": "windows",
+      "metadata": {
+        "collection_scope": "single_app",
+        "minimum_window_seconds": 1800
+      },
+      "id": "windows-browsing-single-app",
+      "title": "Browsing · Single App",
+      "domain": "screen_time",
+      "platform": "windows",
+      "category": "browsing",
+      "status": "ready",
+      "target": {
+        "unit": "samples",
+        "count": 8
+      }
+    },
+    {
+      "domain_label": "Screen Time",
+      "kind": "windows",
+      "category_label": "Live Stream",
+      "collection_type": "windows",
+      "metadata": {
+        "collection_scope": "single_app",
+        "minimum_window_seconds": 1800
+      },
+      "id": "windows-live-stream-single-app",
+      "title": "Live Stream · Single App",
+      "domain": "screen_time",
+      "platform": "windows",
+      "category": "live_stream",
+      "status": "ready",
+      "target": {
+        "unit": "samples",
+        "count": 6
+      }
+    },
+    {
+      "domain_label": "Screen Time",
+      "kind": "windows",
+      "category_label": "Long Video",
+      "collection_type": "windows",
+      "metadata": {
+        "collection_scope": "single_app",
+        "minimum_window_seconds": 1800
+      },
+      "id": "windows-long-video-single-app",
+      "title": "Long Video · Single App",
+      "domain": "screen_time",
+      "platform": "windows",
+      "category": "long_video",
+      "status": "ready",
+      "target": {
+        "unit": "samples",
+        "count": 6
+      }
+    },
+    {
+      "domain_label": "Screen Time",
+      "kind": "windows",
+      "category_label": "Music",
+      "collection_type": "windows",
+      "metadata": {
+        "collection_scope": "single_app",
+        "minimum_window_seconds": 1800
+      },
+      "id": "windows-music-single-app",
+      "title": "Music · Single App",
+      "domain": "screen_time",
+      "platform": "windows",
+      "category": "music",
+      "status": "ready",
+      "target": {
+        "unit": "samples",
+        "count": 6
+      }
+    },
+    {
+      "domain_label": "Screen Time",
+      "kind": "windows",
+      "category_label": "Short Video",
+      "collection_type": "windows",
+      "metadata": {
+        "collection_scope": "single_app",
+        "minimum_window_seconds": 1800
+      },
+      "id": "windows-short-video-single-app",
+      "title": "Short Video · Single App",
+      "domain": "screen_time",
+      "platform": "windows",
+      "category": "short_video",
+      "status": "ready",
+      "target": {
+        "unit": "samples",
+        "count": 6
+      }
+    },
+    {
+      "domain_label": "Screen Time",
+      "kind": "background",
+      "category_label": "Background",
+      "collection_type": "background_baseline",
+      "priority": "normal",
+      "metadata": {
+        "minimum_monitor_seconds": 1800,
+        "collection_scope": "scenario"
+      },
+      "id": "ios-home-screen-idle-background-baseline",
+      "title": "Home Screen Idle",
+      "domain": "screen_time",
+      "platform": "ios",
+      "category": "background",
+      "status": "ready",
+      "target": {
+        "unit": "samples",
+        "count": 2
+      }
+    },
+    {
+      "kind": "windows",
+      "collection_type": "device_state_scenario",
+      "metadata": {
+        "minimum_window_seconds": 1800,
+        "collection_scope": "scenario"
+      },
+      "category_label": "Background",
+      "id": "windows-background-parity",
+      "title": "Windows Background Collection",
+      "domain": "screen_time",
+      "platform": "windows",
+      "category": "background",
+      "status": "ready",
+      "target": {
+        "unit": "samples",
+        "count": 3
+      }
+    },
+    {
+      "domain_label": "Screen Time",
+      "kind": "background",
+      "category_label": "Background",
+      "collection_type": "background_baseline",
+      "metadata": {
+        "collection_scope": "scenario",
+        "minimum_monitor_seconds": 1800
+      },
+      "id": "android-background-baseline",
+      "title": "Background Collection",
+      "domain": "screen_time",
+      "platform": "android",
+      "category": "background",
+      "status": "ready",
+      "target": {
+        "unit": "samples",
+        "count": 4
+      }
+    },
+    {
+      "domain_label": "Screen Time",
+      "kind": "background",
+      "category_label": "Background",
+      "collection_type": "background_baseline",
+      "metadata": {
+        "collection_scope": "scenario",
+        "minimum_monitor_seconds": 1800
+      },
+      "id": "ios-screen-off-background-baseline",
+      "title": "Background Collection",
+      "domain": "screen_time",
+      "platform": "ios",
+      "category": "background",
+      "status": "ready",
+      "target": {
+        "unit": "samples",
+        "count": 2
+      }
+    },
+    {
+      "domain_label": "Screen Time",
+      "kind": "mobile",
+      "category_label": "Browsing",
+      "collection_type": "mobile_control",
+      "metadata": {
+        "collection_scope": "single_app",
+        "minimum_window_seconds": 1800,
+        "environment_profile": "uncleared_background_v1",
+        "continuation_profile": "retained_background_v2",
+        "preparation_orders": {
+          "baidu": 1,
+          "csdn": 2,
+          "weibo": 3,
+          "xiaohongshu": 4
+        },
+        "minimum_monitor_seconds": 1800
+      },
+      "domain": "screen_time",
+      "platform": "android",
+      "category": "browsing",
+      "id": "android-browsing-uncleared-background",
+      "title": "Browsing · Uncleared Background",
+      "target": {
+        "unit": "samples",
+        "count": 4
+      },
+      "status": "ready"
+    },
+    {
+      "domain_label": "Screen Time",
+      "kind": "mobile",
+      "category_label": "Live Stream",
+      "collection_type": "mobile_control",
+      "metadata": {
+        "collection_scope": "single_app",
+        "minimum_window_seconds": 1800,
+        "environment_profile": "uncleared_background_v1",
+        "continuation_profile": "retained_background_v2",
+        "preparation_orders": {
+          "douyu": 2,
+          "huya": 3,
+          "twitch": 4
+        },
+        "minimum_monitor_seconds": 1800
+      },
+      "domain": "screen_time",
+      "platform": "android",
+      "category": "live_stream",
+      "id": "android-live-stream-uncleared-background",
+      "title": "Live Stream · Uncleared Background",
+      "target": {
+        "unit": "samples",
+        "count": 3
+      },
+      "status": "ready"
+    },
+    {
+      "domain_label": "Screen Time",
+      "kind": "mobile",
+      "category_label": "Long Video",
+      "collection_type": "mobile_control",
+      "metadata": {
+        "collection_scope": "single_app",
+        "minimum_window_seconds": 1800,
+        "environment_profile": "uncleared_background_v1",
+        "continuation_profile": "retained_background_v2",
+        "preparation_orders": {
+          "bilibili": 5,
+          "iqiyi": 1,
+          "youtube": 2
+        },
+        "minimum_monitor_seconds": 1800
+      },
+      "domain": "screen_time",
+      "platform": "android",
+      "category": "long_video",
+      "id": "android-long-video-uncleared-background",
+      "title": "Long Video · Uncleared Background",
+      "target": {
+        "unit": "samples",
+        "count": 3
+      },
+      "status": "ready"
+    },
+    {
+      "domain_label": "Screen Time",
+      "kind": "mobile",
+      "category_label": "Music",
+      "collection_type": "mobile_control",
+      "metadata": {
+        "collection_scope": "single_app",
+        "minimum_window_seconds": 1800,
+        "environment_profile": "uncleared_background_v1",
+        "continuation_profile": "retained_background_v2",
+        "preparation_orders": {
+          "netease": 3,
+          "qqmusic": 4,
+          "spotify": 5
+        },
+        "minimum_monitor_seconds": 1800
+      },
+      "domain": "screen_time",
+      "platform": "android",
+      "category": "music",
+      "id": "android-music-uncleared-background",
+      "title": "Music · Uncleared Background",
+      "target": {
+        "unit": "samples",
+        "count": 3
+      },
+      "status": "ready"
+    },
+    {
+      "domain_label": "Screen Time",
+      "kind": "mobile",
+      "category_label": "Short Video",
+      "collection_type": "mobile_control",
+      "metadata": {
+        "collection_scope": "single_app",
+        "minimum_window_seconds": 1800,
+        "environment_profile": "uncleared_background_v1",
+        "continuation_profile": "retained_background_v2",
+        "preparation_orders": {
+          "douyin": 1,
+          "kuaishou": 2,
+          "tiktok": 3
+        },
+        "minimum_monitor_seconds": 1800
+      },
+      "domain": "screen_time",
+      "platform": "android",
+      "category": "short_video",
+      "id": "android-short-video-uncleared-background",
+      "title": "Short Video · Uncleared Background",
+      "target": {
+        "unit": "samples",
+        "count": 3
+      },
+      "status": "ready"
+    },
+    {
+      "domain_label": "Screen Time",
+      "kind": "mobile",
+      "category_label": "Browsing",
+      "collection_type": "mobile_control",
+      "metadata": {
+        "collection_scope": "single_app",
+        "minimum_window_seconds": 1800,
+        "environment_profile": "uncleared_background_v1",
+        "continuation_profile": "retained_background_v2",
+        "preparation_orders": {
+          "baidu": 4,
+          "csdn": 5,
+          "weibo": 1,
+          "xiaohongshu": 2
+        },
+        "minimum_monitor_seconds": 1800
+      },
+      "domain": "screen_time",
+      "platform": "ios",
+      "category": "browsing",
+      "id": "ios-browsing-uncleared-background",
+      "title": "Browsing · Uncleared Background",
+      "target": {
+        "unit": "samples",
+        "count": 4
+      },
+      "status": "ready"
+    },
+    {
+      "domain_label": "Screen Time",
+      "kind": "mobile",
+      "category_label": "Live Stream",
+      "collection_type": "mobile_control",
+      "metadata": {
+        "collection_scope": "single_app",
+        "minimum_window_seconds": 1800,
+        "environment_profile": "uncleared_background_v1",
+        "continuation_profile": "retained_background_v2",
+        "preparation_orders": {
+          "douyu": 3,
+          "huya": 4,
+          "twitch": 5
+        },
+        "minimum_monitor_seconds": 1800
+      },
+      "domain": "screen_time",
+      "platform": "ios",
+      "category": "live_stream",
+      "id": "ios-live-stream-uncleared-background",
+      "title": "Live Stream · Uncleared Background",
+      "target": {
+        "unit": "samples",
+        "count": 3
+      },
+      "status": "ready"
+    },
+    {
+      "domain_label": "Screen Time",
+      "kind": "mobile",
+      "category_label": "Long Video",
+      "collection_type": "mobile_control",
+      "metadata": {
+        "collection_scope": "single_app",
+        "minimum_window_seconds": 1800,
+        "environment_profile": "uncleared_background_v1",
+        "continuation_profile": "retained_background_v2",
+        "preparation_orders": {
+          "bilibili": 1,
+          "iqiyi": 2,
+          "youtube": 3
+        },
+        "minimum_monitor_seconds": 1800
+      },
+      "domain": "screen_time",
+      "platform": "ios",
+      "category": "long_video",
+      "id": "ios-long-video-uncleared-background",
+      "title": "Long Video · Uncleared Background",
+      "target": {
+        "unit": "samples",
+        "count": 3
+      },
+      "status": "ready"
+    },
+    {
+      "domain_label": "Screen Time",
+      "kind": "mobile",
+      "category_label": "Music",
+      "collection_type": "mobile_control",
+      "metadata": {
+        "collection_scope": "single_app",
+        "minimum_window_seconds": 1800,
+        "environment_profile": "uncleared_background_v1",
+        "continuation_profile": "retained_background_v2",
+        "preparation_orders": {
+          "netease": 4,
+          "qqmusic": 5,
+          "spotify": 1
+        },
+        "minimum_monitor_seconds": 1800
+      },
+      "domain": "screen_time",
+      "platform": "ios",
+      "category": "music",
+      "id": "ios-music-uncleared-background",
+      "title": "Music · Uncleared Background",
+      "target": {
+        "unit": "samples",
+        "count": 3
+      },
+      "status": "ready"
+    },
+    {
+      "domain_label": "Screen Time",
+      "kind": "mobile",
+      "category_label": "Short Video",
+      "collection_type": "mobile_control",
+      "metadata": {
+        "collection_scope": "single_app",
+        "minimum_window_seconds": 1800,
+        "environment_profile": "uncleared_background_v1",
+        "continuation_profile": "retained_background_v2",
+        "preparation_orders": {
+          "douyin": 2,
+          "kuaishou": 3,
+          "tiktok": 4
+        },
+        "minimum_monitor_seconds": 1800
+      },
+      "domain": "screen_time",
+      "platform": "ios",
+      "category": "short_video",
+      "id": "ios-short-video-uncleared-background",
+      "title": "Short Video · Uncleared Background",
+      "target": {
+        "unit": "samples",
+        "count": 3
+      },
+      "status": "ready"
+    },
+    {
+      "domain_label": "Screen Time",
+      "kind": "windows",
+      "category_label": "Browsing",
+      "collection_type": "windows",
+      "metadata": {
+        "collection_scope": "single_app",
+        "minimum_window_seconds": 1800,
+        "environment_profile": "uncleared_background_v1",
+        "continuation_profile": "retained_background_v2",
+        "preparation_orders": {
+          "baidu": 5,
+          "csdn": 1,
+          "weibo": 2,
+          "xiaohongshu": 3
+        },
+        "minimum_monitor_seconds": 1800
+      },
+      "domain": "screen_time",
+      "platform": "windows",
+      "category": "browsing",
+      "id": "windows-browsing-uncleared-background",
+      "title": "Browsing · Uncleared Background",
+      "target": {
+        "unit": "samples",
+        "count": 4
+      },
+      "status": "ready"
+    },
+    {
+      "domain_label": "Screen Time",
+      "kind": "windows",
+      "category_label": "Live Stream",
+      "collection_type": "windows",
+      "metadata": {
+        "collection_scope": "single_app",
+        "minimum_window_seconds": 1800,
+        "environment_profile": "uncleared_background_v1",
+        "preparation_orders": {
+          "douyu": 4,
+          "huya": 5,
+          "twitch": 1
+        },
+        "minimum_monitor_seconds": 1800
+      },
+      "domain": "screen_time",
+      "platform": "windows",
+      "category": "live_stream",
+      "id": "windows-live-stream-uncleared-background",
+      "title": "Live Stream · Uncleared Background",
+      "target": {
+        "unit": "samples",
+        "count": 3
+      },
+      "status": "ready"
+    },
+    {
+      "domain_label": "Screen Time",
+      "kind": "windows",
+      "category_label": "Long Video",
+      "collection_type": "windows",
+      "metadata": {
+        "collection_scope": "single_app",
+        "minimum_window_seconds": 1800,
+        "environment_profile": "uncleared_background_v1",
+        "preparation_orders": {
+          "bilibili": 2,
+          "iqiyi": 3,
+          "youtube": 4
+        },
+        "minimum_monitor_seconds": 1800
+      },
+      "domain": "screen_time",
+      "platform": "windows",
+      "category": "long_video",
+      "id": "windows-long-video-uncleared-background",
+      "title": "Long Video · Uncleared Background",
+      "target": {
+        "unit": "samples",
+        "count": 3
+      },
+      "status": "ready"
+    },
+    {
+      "domain_label": "Screen Time",
+      "kind": "windows",
+      "category_label": "Music",
+      "collection_type": "windows",
+      "metadata": {
+        "collection_scope": "single_app",
+        "minimum_window_seconds": 1800,
+        "environment_profile": "uncleared_background_v1",
+        "preparation_orders": {
+          "netease": 5,
+          "qqmusic": 1,
+          "spotify": 2
+        },
+        "minimum_monitor_seconds": 1800
+      },
+      "domain": "screen_time",
+      "platform": "windows",
+      "category": "music",
+      "id": "windows-music-uncleared-background",
+      "title": "Music · Uncleared Background",
+      "target": {
+        "unit": "samples",
+        "count": 3
+      },
+      "status": "ready"
+    },
+    {
+      "domain_label": "Screen Time",
+      "kind": "windows",
+      "category_label": "Short Video",
+      "collection_type": "windows",
+      "metadata": {
+        "collection_scope": "single_app",
+        "minimum_window_seconds": 1800,
+        "environment_profile": "uncleared_background_v1",
+        "preparation_orders": {
+          "douyin": 3,
+          "kuaishou": 4,
+          "tiktok": 5
+        },
+        "minimum_monitor_seconds": 1800
+      },
+      "domain": "screen_time",
+      "platform": "windows",
+      "category": "short_video",
+      "id": "windows-short-video-uncleared-background",
+      "title": "Short Video · Uncleared Background",
+      "target": {
+        "unit": "samples",
+        "count": 3
+      },
+      "status": "ready"
+    },
+    {
+      "id": "ios-collection-readiness-smoke",
+      "title": "iOS collection readiness smoke",
+      "domain": "screen_time",
+      "kind": "mobile",
+      "platform": "ios",
+      "category": "browsing",
+      "status": "ready",
+      "collection_type": "mobile_task",
+      "target": {
+        "unit": "runs",
+        "count": 1
+      },
+      "breakdown": [],
+      "metadata": {
+        "execution_only": true,
+        "formal_sample_units": 0
+      }
+    },
+    {
+      "id": "android-collection-readiness-smoke",
+      "title": "Android collection readiness smoke",
+      "domain": "screen_time",
+      "kind": "mobile",
+      "platform": "android",
+      "category": "browsing",
+      "status": "ready",
+      "collection_type": "mobile_task",
+      "target": {
+        "unit": "runs",
+        "count": 1
+      },
+      "breakdown": [],
+      "metadata": {
+        "execution_only": true,
+        "formal_sample_units": 0
+      }
+    },
+    {
+      "id": "android-manual-screen-time",
+      "title": "Android manual screen time",
+      "domain": "screen_time",
+      "kind": "manual",
+      "platform": "android",
+      "category": "manual_ground_truth",
+      "status": "ready",
+      "target": {
+        "unit": "runs",
+        "count": 1
+      },
+      "metadata": {
+        "attribution_mode": "none",
+        "annotation_source": "operator",
+        "execution_only": true
+      }
+    },
+    {
+      "id": "windows-manual-screen-time",
+      "title": "Windows manual screen time",
+      "domain": "screen_time",
+      "kind": "manual",
+      "platform": "windows",
+      "category": "manual_ground_truth",
+      "status": "ready",
+      "target": {
+        "unit": "runs",
+        "count": 1
+      },
+      "metadata": {
+        "attribution_mode": "none",
+        "annotation_source": "operator",
+        "execution_only": true
+      }
+    },
+    {
+      "id": "ios-manual-screen-time",
+      "title": "iPhone manual screen time",
+      "domain": "screen_time",
+      "kind": "manual",
+      "platform": "ios",
+      "category": "manual_ground_truth",
+      "status": "ready",
+      "target": {
+        "unit": "runs",
+        "count": 1
+      },
+      "metadata": {
+        "attribution_mode": "none",
+        "annotation_source": "operator",
+        "execution_only": true
+      }
+    },
+    {
+      "id": "windows-native-control-smoke",
+      "title": "Windows native shared-playbook smoke",
+      "domain": "screen_time",
+      "kind": "windows",
+      "platform": "windows",
+      "category": "native_control_smoke",
+      "status": "ready",
+      "collection_type": "targeted_native_control_smoke",
+      "target": {
+        "unit": "runs",
+        "count": 1
+      },
+      "metadata": {
+        "minimum_window_seconds": 10,
+        "dataset_promotion": "disabled",
+        "execution_only": true
+      }
+    },
+    {
+      "id": "windows-browser-control-smoke",
+      "title": "Windows existing-browser control smoke",
+      "domain": "screen_time",
+      "kind": "windows",
+      "platform": "windows",
+      "category": "browser_control_smoke",
+      "status": "ready",
+      "collection_type": "targeted_browser_control_smoke",
+      "target": {
+        "unit": "runs",
+        "count": 3
+      },
+      "metadata": {
+        "minimum_window_seconds": 10,
+        "dataset_promotion": "disabled",
+        "execution_only": true
+      }
+    },
+    {
+      "id": "windows-workstation-traffic-probe",
+      "title": "Windows workstation traffic probe",
+      "domain": "screen_time",
+      "domain_label": "Screen Time",
+      "kind": "windows",
+      "platform": "windows",
+      "platform_label": "Windows",
+      "category": "manual_ground_truth",
+      "category_label": "Manual Ground Truth",
+      "collection_type": "windows_manual_foreground_ground_truth",
+      "priority": "normal",
+      "status": "ready",
+      "target": {
+        "unit": "seconds",
+        "count": 1200
+      },
+      "breakdown": [
+        {
+          "key": "manual_window",
+          "label": "Manual Window",
+          "target": 1200,
+          "baseline_completed": 0
+        }
+      ],
+      "metadata": {
+        "dataset_promotion": "disabled",
+        "execution_only": true
+      }
+    },
+    {
+      "id": "iot-alexa-operations",
+      "title": "alexa operation collection",
+      "kind": "iot",
+      "platform": "alexa",
+      "domain": "iot",
+      "category": "operations",
+      "status": "ready",
+      "target": {
+        "unit": "runs",
+        "count": 1
+      }
+    },
+    {
+      "id": "iot-apple-home-operations",
+      "title": "apple_home operation collection",
+      "kind": "iot",
+      "platform": "apple_home",
+      "domain": "iot",
+      "category": "operations",
+      "status": "ready",
+      "target": {
+        "unit": "runs",
+        "count": 1
+      }
+    },
+    {
+      "id": "iot-google-home-operations",
+      "title": "google_home operation collection",
+      "kind": "iot",
+      "platform": "google_home",
+      "domain": "iot",
+      "category": "operations",
+      "status": "ready",
+      "target": {
+        "unit": "runs",
+        "count": 1
+      }
+    },
+    {
+      "id": "manual-smart-plug",
+      "title": "Smart plug",
+      "kind": "iot",
+      "platform": "google_home",
+      "domain": "iot",
+      "category": "smart_plug",
+      "status": "ready",
+      "target": {
+        "unit": "runs",
+        "count": 1
+      },
+      "metadata": {
+        "device_id": "plug",
+        "device_mac_env": "ROUTERWEAVE_DEVICE_MAC"
+      },
+      "breakdown": [
+        {
+          "key": "power_on",
+          "label": "Power on"
+        },
+        {
+          "key": "power_off",
+          "label": "Power off"
+        }
+      ]
+    },
+    {
+      "id": "govee-h7122-routine",
+      "title": "govee h7122 routine",
+      "kind": "iot",
+      "platform": "alexa",
+      "domain": "iot",
+      "category": "routine",
+      "status": "ready",
+      "target": {
+        "unit": "runs",
+        "count": 1
+      },
+      "metadata": {
+        "routine_plan_id": "govee-h7122-routine"
+      },
+      "collection_type": "iot_routine",
+      "minimum_duration_seconds": 345600
+    },
+    {
+      "id": "meross-map100-routine",
+      "title": "meross map100 routine",
+      "kind": "iot",
+      "platform": "apple_home",
+      "domain": "iot",
+      "category": "routine",
+      "status": "ready",
+      "target": {
+        "unit": "runs",
+        "count": 1
+      },
+      "metadata": {
+        "routine_plan_id": "meross-map100-routine"
+      },
+      "collection_type": "iot_routine",
+      "minimum_duration_seconds": 345600
+    },
+    {
+      "id": "wifi-smart-cordless-kettle-routine",
+      "title": "wifi smart cordless kettle routine",
+      "kind": "iot",
+      "platform": "alexa",
+      "domain": "iot",
+      "category": "routine",
+      "status": "ready",
+      "target": {
+        "unit": "runs",
+        "count": 1
+      },
+      "metadata": {
+        "routine_plan_id": "wifi-smart-cordless-kettle-routine"
+      },
+      "collection_type": "iot_routine",
+      "minimum_duration_seconds": 345600
+    },
+    {
+      "id": "xiaomi-dehumidifier-lite-routine",
+      "title": "xiaomi dehumidifier lite routine",
+      "kind": "iot",
+      "platform": "alexa",
+      "domain": "iot",
+      "category": "routine",
+      "status": "ready",
+      "target": {
+        "unit": "runs",
+        "count": 1
+      },
+      "metadata": {
+        "routine_plan_id": "xiaomi-dehumidifier-lite-routine"
+      },
+      "collection_type": "iot_routine",
+      "minimum_duration_seconds": 345600
+    },
+    {
+      "id": "xiaomi-desktop-circulation-fan-routine",
+      "title": "xiaomi desktop circulation fan routine",
+      "kind": "iot",
+      "platform": "alexa",
+      "domain": "iot",
+      "category": "routine",
+      "status": "ready",
+      "target": {
+        "unit": "runs",
+        "count": 1
+      },
+      "metadata": {
+        "routine_plan_id": "xiaomi-desktop-circulation-fan-routine"
+      },
+      "collection_type": "iot_routine",
+      "minimum_duration_seconds": 345600
+    }
+  ]
+}

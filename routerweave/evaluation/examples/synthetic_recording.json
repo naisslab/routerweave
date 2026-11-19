@@ -1,0 +1,1 @@
+{"id":"demo","platform":"android","device":"amazon-plug","action":"on","app":"Spotify","windows":[{"id":"w0","end":30}],"candidates":[{"id":"c0","members":[0,1]}],"packets":{"t":[0,0.2,30],"size":[80,90,1200],"direction":[1,-1,-1],"flow":[0,0,1],"local":[false,false,false]}}

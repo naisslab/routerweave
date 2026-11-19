@@ -1,0 +1,12 @@
+{
+  "segments": [
+    {
+      "device": "fan",
+      "profile": "circulation_fan",
+      "start": 0,
+      "end": 600,
+      "logged": [[120, "power_off"], [300, "power_on"], [480, "power_off"]],
+      "inferred": [[130, "power_off"], [330, "power_on"]]
+    }
+  ]
+}

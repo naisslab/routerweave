@@ -1,0 +1,9 @@
+/*.rar
+**/__pycache__/
+*.py[cod]
+.venv/
+/routerweave/recognition/activity/work/
+/routerweave/recognition/iot/trained-example/
+/routerweave/evaluation/bin-arm/
+/routerweave/evaluation/bin-x86/
+/routerweave/evaluation/toy-input/

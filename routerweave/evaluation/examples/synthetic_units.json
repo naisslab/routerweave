@@ -1,0 +1,9 @@
+{
+  "train": [
+    {"id":"fit-1","label":"a","group":"os","packets":{"t":[0,0.2,0.4],"size":[80,90,80],"direction":[1,-1,1],"flow":[0,0,0],"local":[false,false,false]},"fingerprints":[{"tokens":["endpoint-a"],"flows":1}]},
+    {"id":"fit-2","label":"b","group":"os","packets":{"t":[0,0.1,0.2],"size":[1200,1100,1200],"direction":[-1,-1,1],"flow":[0,0,0],"local":[false,false,false]},"fingerprints":[{"tokens":["endpoint-b"],"flows":1}]}
+  ],
+  "test": [
+    {"id":"query-1","group":"os","packets":{"t":[0,0.1,0.2],"size":[1200,1100,1200],"direction":[-1,-1,1],"flow":[0,0,0],"local":[false,false,false]},"fingerprints":[{"tokens":["endpoint-b"],"flows":1}]}
+  ]
+}

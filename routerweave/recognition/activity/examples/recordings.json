@@ -1,0 +1,62 @@
+[
+  {
+    "id": "sample-a",
+    "group": "session-a",
+    "platform": "android",
+    "label": "music",
+    "fold": 0,
+    "pcap": "android_music_fold0.pcap",
+    "ip": "192.0.2.10",
+    "intervals": [
+      [
+        0,
+        60
+      ]
+    ]
+  },
+  {
+    "id": "sample-b",
+    "group": "session-b",
+    "platform": "ios",
+    "label": "browsing",
+    "fold": 1,
+    "pcap": "ios_browsing_fold1.pcap",
+    "ip": "192.0.2.10",
+    "intervals": [
+      [
+        0,
+        60
+      ]
+    ]
+  },
+  {
+    "id": "sample-c",
+    "group": "session-c",
+    "platform": "android",
+    "label": "music",
+    "fold": 2,
+    "pcap": "android_music_fold2.pcap",
+    "ip": "192.0.2.10",
+    "intervals": [
+      [
+        0,
+        60
+      ]
+    ]
+  },
+  {
+    "id": "sample-d",
+    "group": "session-d",
+    "platform": "ios",
+    "label": "browsing",
+    "fold": "test",
+    "pcap": "ios_browsing_test.pcap",
+    "ip": "192.0.2.10",
+    "intervals": [
+      [
+        0,
+        60
+      ]
+    ]
+  }
+]

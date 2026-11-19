@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "profiles": {
+    "windows_network_capture": {
+      "platform": "windows",
+      "summary": "Generic Windows foreground-activity logging with optional plan-driven desktop input and router-side header-only pcap capture.",
+      "owner_scripts": [
+        "scripts/collection/collect_windows.ps1",
+        "src/collection/runtime/windows/capture.py",
+        "src/collection/runtime/windows/automation.py",
+        "src/collection/runtime/windows/network_capture.py"
+      ],
+      "stable_plan": "configs/plans/windows_behavior.json",
+      "defaults": {
+        "collection_task_id": "<TASK_ID>",
+        "plan": "configs\\plans\\windows_behavior.json",
+        "duration": "60",
+        "router_host": "",
+        "router_user": "root",
+        "router_interface": "br-lan",
+        "router_identity": "$env:ROUTERWEAVE_SSH_KEY",
+        "device_ip": "",
+        "out": "runs\\windows-network-capture-smoke"
+      },
+      "non_negotiable": [
+        "Use plan actions only on an operator-authorized Windows desktop.",
+        "Router capture must filter to the collection workstation and exclude its SSH control channel.",
+        "Keep new output in runs until artifact validation passes; do not treat randomized intent as proof that media playback succeeded."
+      ],
+      "commands": {
+        "dry_run": [
+          "$env:PYTHONPATH = \".\\src\"",
+          "powershell -ExecutionPolicy Bypass -File .\\scripts\\collection\\collect_windows.ps1 `",
+          "  -CollectionTaskId {collection_task_id} `",
+          "  -Plan {plan} `",
+          "  -DurationSeconds {duration} `",
+          "  -DryRun"
+        ],
+        "manual_smoke": [
+          "$env:PYTHONPATH = \".\\src\"",
+          "powershell -ExecutionPolicy Bypass -File .\\scripts\\collection\\collect_windows.ps1 `",
+          "  -CollectionTaskId {collection_task_id} `",
+          "  -Plan {plan} `",
+          "  -DurationSeconds {duration} `",
+          "  -NoAutomation `",
+          "  -RootOut {out}"
+        ],
+        "smoke": [
+          "$env:PYTHONPATH = \".\\src\"",
+          "powershell -ExecutionPolicy Bypass -File .\\scripts\\collection\\collect_windows.ps1 `",
+          "  -CollectionTaskId {collection_task_id} `",
+          "  -Plan {plan} `",
+          "  -DurationSeconds {duration} `",
+          "  -EnableRouterCapture `",
+          "  -RouterHost {router_host} `",
+          "  -RouterUser {router_user} `",
+          "  -RouterInterface {router_interface} `",
+          "  -RouterIdentity \"{router_identity}\" `",
+          "  -RootOut {out}"
+        ]
+      },
+      "validation": {
+        "type": "windows_network_capture_artifacts",
+        "required_files": [
+          "effective_plan.json",
+          "events.jsonl",
+          "usage_windows.jsonl",
+          "windows_capture_manifest.json"
+        ],
+        "windows_capture": {}
+      }
+    }
+  }
+}
